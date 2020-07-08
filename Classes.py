@@ -74,6 +74,23 @@ class Writer:
         browser.find_element_by_css_selector(Writer.base_disposiciones_CSS).click()
 
     @staticmethod
+    def back_to_disposiciones(browser):
+        """
+        Goes back to disposiciones after filling the form
+        """
+        browser.switch_to.default_content()
+        browser.switch_to.frame("mainFrame")
+        browser.switch_to.frame(
+            browser.find_element_by_xpath("/html/frameset/frameset/frame[1]"))
+        WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                                     "body > table:nth-child(1) > tbody:nth-child(1) > "
+                                                                     "tr:nth-child(4) > td:nth-child(1) > a:nth-child("
+                                                                     "1)")))
+        browser.find_element_by_css_selector(
+            "body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > a:nth-child("
+            "1)").click()
+
+    @staticmethod
     def fill_form(datos, browser):
         """
         rellena el formulario con los datos del dictionary pasado como parámetro
@@ -157,8 +174,6 @@ class Writer:
 
         # vuelve a la página principal y podemos invocar a in_disposiciones() para volver a empezar
 
-        # a partir de aquí empieza por "entra en disposiciones" y vuelve a empezar
-
 
 class Reader:
     """
@@ -170,7 +185,7 @@ class Reader:
 
     @staticmethod
     def get_rango():
-        rangos = {"resolución": "Resolución", "orden": "Orden", "decreto": "Decreto", "acuerdo": "Acuerdo",
+        rangos = {"resolución": "Resolución",  "orden": "Orden", "decreto": "Decreto", "acuerdo": "Acuerdo",
                   "Real": "Real Decreto"}
 
         for rang in rangos.keys():
@@ -189,35 +204,37 @@ class Reader:
             if mes == m:
                 return meses[m]
 
-    def get_fecha_mesletras(self, a):
-        fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]?)")
-        match_fecha = re.search(fecha_regex, a)
+    def get_fecha_mesletras(self, texto):
+        fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]*)")
+        match_fecha = re.search(fecha_regex, texto)
         if match_fecha[3]:
-            return str(match_fecha.group(1)) + "/" + str(self.mes_a_numero(match_fecha.group(2))) \
-                   + "/" + match_fecha.group[3][-2:]
+            return str(match_fecha[1]) + "/" + str(self.mes_a_numero(match_fecha[2])) \
+                   + "/" + str(match_fecha[3].rstrip()[-2:])
         else:
-            return str(match_fecha.group(1)) + "/" + str(self.mes_a_numero(match_fecha.group(2))) \
+            return str(match_fecha[1]) + "/" + str(self.mes_a_numero(match_fecha[2])) \
                    + "/" + str(datetime.now().year)[-2:]
-
 
     @staticmethod
     def get_palabras_clave():
         """
         saca las palabras clave a partir del objeto de regulación
         """
-        palabras = {"Universidad": "Universidad", "Universit": "Universidad", "subvenci": "Becas y subvenciones",
-                    "Subvenci": "Becas y subvenciones", "ayudas": "Becas y subvenciones",
-                    "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones", "Beca": "Becas y subvenciones",
-                    "Premio": "Becas y subvenciones", "Formación Profesional": "Formación Profesional",
+        palabras = {"Universidad": "Universidad", "universidad": "Universidad", "Universit": "Universidad",
+                    "subvenci": "Becas y subvenciones", "Subvenci": "Becas y subvenciones",
+                    "ayudas": "Becas y subvenciones", "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
+                    "Beca": "Becas y subvenciones", "Premio": "Becas y subvenciones",
+                    "Formación Profesional": "Formación Profesional",
                     "centro": "Centros", "Centro": "Centros", "escuela": "Centros", "unidades escolares": "Centros",
                     "nueva denominación específica": "Centros", "puestos de trabajo docentes": "Cuerpos docentes",
                     "funcionarias de carrera": "Cuerpos docente", "funcionarios de carrera": "Cuerpos docentes",
                     "bachillerato": "Bachillerato", "Bachillerato": "Bachillerato", "idiomas": "Idiomas",
-                    "inglés": "Idiomas", "concurso de traslados": "Concurso de traslados", "concierto": "Conciertos",
+                    "inglés": "Idiomas", "concurso de traslados": "Concurso de traslados",
+                    "traslados": "Concurso de traslados", "concierto": "Conciertos",
                     "interin": "Interinos", "plantilla": "Cuerpos docentes", "Cuerpo de Maestros": "Cuerpos docentes",
                     "infantil": "Educación Infantil", "Infantil": "Educación Infantil",
                     "secundaria": "Enseñanza Obligatoria", "Secundaria": "Enseñanza Obligatoria"}
-        palabras_uni = {"Catedrátic": "Catedráticos", "Profesor": "Catedráticos", "plan de estudios": "Centros",
+        palabras_uni = {"Catedrátic": "Catedráticos", "Profesor": "Catedráticos", "profesor": "Catedráticos",
+                        "titular": "Catedráticos", "plan de estudios": "Centros", "pruebas selectivas": "Oposiciones",
                         "concurso": "Oposiciones", "presupuesto": "Presupuesto", "subvenci": "Becas y subvenciones",
                         "Subvenci": "Becas y subvenciones", "ayudas": "Becas y subvenciones",
                         "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
@@ -236,6 +253,9 @@ class Reader:
                     break
             else:
                 Writer.datos_disposicion["palabra_clave_2"] = "Catedráticos"
+
+        if Writer.datos_disposicion["palabra_clave_1"] == "":
+            Writer.datos_disposicion["palabra_clave_1"] = "Centros"
 
     @staticmethod
     def fin_vigencia():
@@ -258,7 +278,7 @@ class Reader:
         Writer.datos_disposicion["fin_vigencia"] = self.fin_vigencia()
         self.get_palabras_clave()
 
-    def read_boe(self, browser):
+    def read_boe_html(self, browser):
         """
         reads normal BOE HTML
         """
@@ -269,7 +289,7 @@ class Reader:
         self.process_disposition()
 
     @staticmethod
-    def sacar_texto_boja(driver):
+    def sacar_texto_boja_html(driver):
         s = ""
         try:
             i = 1
@@ -282,19 +302,19 @@ class Reader:
 
         return s
 
-    def read_boja(self, browser):
+    def read_boja_html(self, browser):
         """
         reads Boletín Andalucía
         """
         # first it has to change to a container
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div[4]/div/div[1]/div/div[1]/h4").text
-        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_boja(browser)
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_boja_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de la Junta de Andalucía"
         self.process_disposition()
 
     @staticmethod
-    def sacar_texto_aragon(browser):
+    def sacar_texto_aragon_html(browser):
         s = ""
         try:
 
@@ -307,7 +327,7 @@ class Reader:
             pass
         return s
 
-    def read_aragon(self, browser):
+    def read_aragon_html(self, browser):
         """
         read boletín de aragón
         :param: the webdriver in use at the moment
@@ -315,12 +335,12 @@ class Reader:
         # lee objeto de regulación y texto
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div/div/section/div/div/div[2]/h3/span[2]").text
-        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_aragon(browser)
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_aragon_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Aragón"
         self.process_disposition()
 
     @staticmethod
-    def sacar_texto_asturias(browser):
+    def sacar_texto_asturias_html(browser):
         s = ""
         try:
 
@@ -334,7 +354,7 @@ class Reader:
             pass
         return s
 
-    def read_asturias(self, browser):
+    def read_asturias_html(self, browser):
         """
         read boletín de asturias
         :param: the webdriver in use at the moment
@@ -342,15 +362,15 @@ class Reader:
         # lee objeto de regulación y texto
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div[2]/div[2]/div/div/div/div[3]/div/div[3]/div/p[1]").text
-        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_asturias(browser)
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_asturias_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial del Principado de Asturias"
         self.process_disposition()
 
     @staticmethod
-    def sacar_objeto_regulacion_canarias(browser):
+    def sacar_objeto_regulacion_canarias_html(browser):
         """
         extracts the heading of boe canarias
-        :return:
+        :return: objeto de regulacion
         """
         pattern = re.compile(r"\d* página")
         s = browser.find_element_by_xpath("/html/body/div/div[4]/div[2]/div/h3").text[
@@ -358,7 +378,12 @@ class Reader:
         return s
 
     @staticmethod
-    def sacar_texto_canarias(browser):
+    def sacar_texto_canarias_html(browser):
+        """
+        extract full text from boe canarias
+        :param browser: current selenium driver
+        :return: full text
+        """
         s = ""
         try:
 
@@ -371,26 +396,142 @@ class Reader:
             pass
         return s
 
-    def read_canarias(self, browser):
-        Writer.datos_disposicion["objeto_de_regulacion"] = self.sacar_objeto_regulacion_canarias(browser)
-        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_canarias(browser)
+    def read_canarias_html(self, browser):
+        """
+        extracts data from boe canarias
+        :param browser:
+        """
+        Writer.datos_disposicion["objeto_de_regulacion"] = self.sacar_objeto_regulacion_canarias_html(browser)
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_canarias_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Canarias"
         self.process_disposition()
 
-    def read_disposicion(self, url, browser):
+    @staticmethod
+    def sacar_texto_leon_html(browser):
+        s = ""
+        try:
+
+            i = 2  # i starts at 2 because the first <p> is the "objeto de regulación"
+            t = True
+            while t:
+                s += browser.find_element_by_xpath(
+                    "/html/body/div/div[2]/div/div/div[3]/div/div/p[" + str(i) + "]").text + "\n"
+                i += 1
+        except NoSuchElementException:
+            pass
+        return s
+
+    def read_leon_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("entradilla").text
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_leon_html(browser)
+        Writer.datos_disposicion["boletin"] = "Boletín Oficial de Castilla y León"
+        self.process_disposition()
+
+    def read_catalunya_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("titol").text
+        Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("fitxaFragment").text
+        Writer.datos_disposicion["boletin"] = "Diari Oficial de la Generalitat de Catalunya"
+        self.process_disposition()
+
+    def read_galicia_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("dog-texto-sumario").text
+        Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("story").text
+        Writer.datos_disposicion["boletin"] = "Diario Oficial de Galicia"
+        self.process_disposition()
+
+    def read_larioja_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("entradilla_anuncio").text
+        Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("anuncio_texto").text
+        Writer.datos_disposicion["boletin"] = "Boletín Oficial de La Rioja"
+        self.process_disposition()
+
+    def read_murcia_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("ng-binding").text
+        Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("contenidoAnuncio").text
+        Writer.datos_disposicion["boletin"] = "Boletín Oficial de la Región de Murcia"
+        self.process_disposition()
+
+    @staticmethod
+    def sacar_texto_navarra_html(browser):
+        s = ""
+        try:
+
+            i = 2  # i starts at 2 because the first <p> is something else
+            t = True
+            while t:
+                s += browser.find_element_by_xpath(
+                    "/html/body/div/main/section/div/div[2]/div[1]/div/div/section/div/div/div/p[" + str(
+                        i) + "]").text + "\n"
+                i += 1
+        except NoSuchElementException:
+            pass
+        return s
+
+    def read_navarra_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
+            "/html/body/div/main/section/div/div[2]/div[1]/div/div/section/div/div/div/h3[2]").text
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_navarra_html(browser)
+        Writer.datos_disposicion["boletin"] = "Boletín Oficial de Navarra"
+        self.process_disposition()
+
+    @staticmethod
+    def sacar_texto_vasco_html(browser):
+        s = ""
+        try:
+
+            i = 3  # i starts at 2 because the first <p> is something else
+            t = True
+            while t:
+                s += browser.find_element_by_xpath(
+                    "/html/body/div[1]/div[4]/div/div/div/div[2]/div/p[" + str(i) + "]").text + "\n"
+                i += 1
+        except NoSuchElementException:
+            pass
+        return s
+
+    def read_vasco_html(self, browser):
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("BOPVTitulo").text
+        Writer.datos_disposicion["texto_completo"] = self.sacar_texto_vasco_html(browser)
+        Writer.datos_disposicion["boletin"] = "Boletín Oficial del País Vasco"
+        self.process_disposition()
+
+    def read_valencia(self, browser):
+        browser.switch_to.frame("iframe-164029406")
+        Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("negro").text
+        Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("fic2").text
+        Writer.datos_disposicion["boletin"] = "Diari Oficial de la Comunitat Valenciana"
+        self.process_disposition()
+
+    def read_disposicion_html(self, url, browser):
         """
         Case Boletín Oficial del Estado
         """
         if "boe.es" in url:
-            self.read_boe(browser)
-        if "juntadeandalucia" in url:
-            self.read_boja(browser)
-        if "boa.aragon" in url:
-            self.read_aragon(browser)
-        if "sede.asturias" in url:
-            self.read_asturias(browser)
-        if "gobiernodecanarias" in url:
-            self.read_canarias(browser)
+            self.read_boe_html(browser)
+        elif "juntadeandalucia" in url:
+            self.read_boja_html(browser)
+        elif "boa.aragon" in url:
+            self.read_aragon_html(browser)
+        elif "sede.asturias" in url:
+            self.read_asturias_html(browser)
+        elif "gobiernodecanarias" in url:
+            self.read_canarias_html(browser)
+        elif "bocyl" in url:
+            self.read_leon_html(browser)
+        elif "dogc.gencat" in url:
+            self.read_catalunya_html(browser)
+        elif "xunta.gal" in url:
+            self.read_galicia_html(browser)
+        elif "web.larioja" in url:
+            self.read_larioja_html(browser)
+        elif "borm" in url:
+            self.read_murcia_html(browser)
+        elif "bon.navarra" in url:
+            self.read_navarra_html(browser)
+        elif "euskadi" in url:
+            self.read_vasco_html(browser)
+        elif "dogv.gva" in url:
+            self.read_valencia(browser)
 
 
 """ puedo asignar a los método del otro módulo el nombre de una variable para poder usarlo sin que esté tan petado de 

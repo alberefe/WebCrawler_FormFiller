@@ -46,9 +46,16 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
                                                              "2) > "
                                                              "input:nth-child(1)")))
 
-# this part shoud be repeated for every url in the list
-driver_disposicion = webdriver.Firefox()
-driver_disposicion.get(lista_mejor[0])
-reader.read_disposicion(lista_mejor[0], driver_disposicion)
-driver_disposicion.quit()
-Classes.Writer.fill_form(Classes.Writer.datos_disposicion, browser)
+# now we iterate through all urls in the list and fill the form with the info inside
+
+for i in lista_mejor:
+    driver_disposicion = webdriver.Firefox()
+    driver_disposicion.get(i)
+    reader.read_disposicion_html(i, driver_disposicion)
+    driver_disposicion.quit()
+    Classes.Writer.fill_form(Classes.Writer.datos_disposicion, browser)
+    Classes.Writer.back_to_disposiciones(browser)
+
+
+
+
