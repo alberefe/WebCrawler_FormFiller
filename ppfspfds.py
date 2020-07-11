@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,23 +10,20 @@ import Classes
 import re
 import datetime
 import Classes
+import json
+import urllib
+import os
+import glob
 
-driver = webdriver.Firefox()
 reader = Classes.Reader()
 logger = Classes.Logger()
 
-driver.get("http://magislex.com/")
 
-logger.log_in(driver)
 
-Writer.in_disposiciones(driver)
+for values in Writer.datos_disposicion.values():
+    print(values)
 
-driver.switch_to.default_content()
-driver.switch_to.frame("mainFrame")
-driver.switch_to.frame(
-    driver.find_element_by_xpath("/html/frameset/frameset/frame[1]"))
-WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
-                                                            "body > table:nth-child(1) > tbody:nth-child(1) > "
-                                                            "tr:nth-child(4) > td:nth-child(1) > a:nth-child(1)")))
-driver.find_element_by_css_selector(
-    "body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > a:nth-child(1)").click()
+""" para comprobar si el elemento existe, hay que buscar con xpath si hay algo acabado en img o table y
+si exception not found, entonces continuar normalmente. Si no, hay exception, descargar pdf y añadirlo al diccionario
+ 
+"""

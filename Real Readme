@@ -1,0 +1,6 @@
+Instructions for the program to work:
+
+- Install WebDriver GeckoDriver
+- Change settings for firefox in:
+    C:\Users\DickVater\AppData\Local\Programs\Python\Python38\Lib\site-packages\selenium\webdriver\firefox|webdriver_prefs
+- set PATHs for the files

@@ -8,6 +8,7 @@ import os
 
 # list that will contain the correctly formatted urls
 lista_mejor = []
+logger = Classes.Logger()
 
 
 def format_direcciones(lista):
@@ -20,22 +21,44 @@ def format_direcciones(lista):
 
 
 # changes dir to the one that contains the addresses
-os.chdir("C:\\Users\\DickVater\\PycharmProjects\\AutoMagislex\\direcciones")
+os.chdir(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs")
 
 with open("webs") as direcciones:
     lista_raw = direcciones.readlines()  # returns a list containing each line of the documents
 
 # formats the url list and creates a logger instance
 format_direcciones(lista_raw)
-logger = Classes.Logger()
 
+"""
+Here i create a new profile for Firefox to download pdfs clicking on their links
+"""
+
+mime_types = "application/pdf,application/vnd.adobe.xfdf,application/vnd.fdf,application/vnd.adobe.xdp+xml"
+fp = webdriver.FirefoxProfile()
+fp.set_preference("browser.download.folderList", 2)
+fp.set_preference("browser.download.manager.showWhenStarting", False)
+fp.set_preference("browser.download.dir", r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs")
+fp.set_preference("browser.helperApps.neverAsk.saveToDisk", mime_types)
+fp.set_preference("plugin.disable_full_page_plugin_for_types", mime_types)
+fp.set_preference("pdfjs.disabled", True)
+
+
+browser = webdriver.Firefox(firefox_profile=fp)
+
+
+
+
+"""
 # entra en magislex, logea y entra en disposiciones
 browser = webdriver.Firefox()
+"""
+
 browser.get("http://magislex.com/")
 logger.log_in(browser)
 Classes.Writer.in_disposiciones(browser)
 reader = Classes.Reader()
 
+# aquí entra entra en los frames y espera a que esté disponible el botón para clickar
 browser.switch_to.default_content()
 browser.switch_to.frame("mainFrame")
 browser.switch_to.frame("contenidoFrame")
@@ -49,13 +72,25 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
 # now we iterate through all urls in the list and fill the form with the info inside
 
 for i in lista_mejor:
-    driver_disposicion = webdriver.Firefox()
-    driver_disposicion.get(i)
-    reader.read_disposicion_html(i, driver_disposicion)
-    driver_disposicion.quit()
+    # opens the disposición in new tab
+    browser.execute_script("window.open('" + str(i) + "')")
+    # switch focus to new tab
+    browser.switch_to.window(browser.window_handles[1])
+    # resets previous disposition
+    Classes.Writer.reset_datos_disposicion()
+    # read new one
+    reader.read_disposicion_html(i, browser)
+    # closes tab
+    browser.close()
+    browser.switch_to.window(browser.window_handles[0])
     Classes.Writer.fill_form(Classes.Writer.datos_disposicion, browser)
     Classes.Writer.back_to_disposiciones(browser)
 
 
 
 
+
+
+""" ahora tengo que hacer una función que sea upload_pdf, que reciba la url de turno, y saque de ahí el pdf 
+correspondiente.  Para download, habrá que hacerlo en cada read_disposición individual
+"""

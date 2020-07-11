@@ -1,3 +1,5 @@
+import glob
+
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
@@ -5,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 import re
 from datetime import datetime
+import os
 
 
 class Logger:
@@ -174,6 +177,15 @@ class Writer:
 
         # vuelve a la página principal y podemos invocar a in_disposiciones() para volver a empezar
 
+    @staticmethod
+    def reset_datos_disposicion():
+        """
+         resets the values in the dictionary so we prevent
+         errors in the next disposition
+        """
+        for key in Writer.datos_disposicion.keys():
+            Writer.datos_disposicion[key] = ""
+
 
 class Reader:
     """
@@ -185,7 +197,7 @@ class Reader:
 
     @staticmethod
     def get_rango():
-        rangos = {"resolución": "Resolución",  "orden": "Orden", "decreto": "Decreto", "acuerdo": "Acuerdo",
+        rangos = {"resolución": "Resolución", "orden": "Orden", "decreto": "Decreto", "acuerdo": "Acuerdo",
                   "Real": "Real Decreto"}
 
         for rang in rangos.keys():
@@ -208,7 +220,7 @@ class Reader:
         fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]*)")
         match_fecha = re.search(fecha_regex, texto)
         if match_fecha[3]:
-            return str(match_fecha[1]) + "/" + str(self.mes_a_numero(match_fecha[2])) \
+            return str(match_fecha[1].zfill(2)) + "/" + str(self.mes_a_numero(match_fecha[2])) \
                    + "/" + str(match_fecha[3].rstrip()[-2:])
         else:
             return str(match_fecha[1]) + "/" + str(self.mes_a_numero(match_fecha[2])) \
@@ -219,11 +231,13 @@ class Reader:
         """
         saca las palabras clave a partir del objeto de regulación
         """
-        palabras = {"Universidad": "Universidad", "universidad": "Universidad", "Universit": "Universidad",
+        palabras = {"Universidad": "Universidad", "Universitat": "Universidad", "universidad": "Universidad",
+                    "Universit": "Universidad",
                     "subvenci": "Becas y subvenciones", "Subvenci": "Becas y subvenciones",
                     "ayudas": "Becas y subvenciones", "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
                     "Beca": "Becas y subvenciones", "Premio": "Becas y subvenciones",
-                    "Formación Profesional": "Formación Profesional",
+                    "procedimiento selectivo": "Cuerpos docentes", "profesorado": "Cuerpos docentes",
+                    "Formación Profesional": "Formación Profesional", "Oferta de Empleo": "Puestos de trabajo",
                     "centro": "Centros", "Centro": "Centros", "escuela": "Centros", "unidades escolares": "Centros",
                     "nueva denominación específica": "Centros", "puestos de trabajo docentes": "Cuerpos docentes",
                     "funcionarias de carrera": "Cuerpos docente", "funcionarios de carrera": "Cuerpos docentes",
@@ -231,14 +245,15 @@ class Reader:
                     "inglés": "Idiomas", "concurso de traslados": "Concurso de traslados",
                     "traslados": "Concurso de traslados", "concierto": "Conciertos",
                     "interin": "Interinos", "plantilla": "Cuerpos docentes", "Cuerpo de Maestros": "Cuerpos docentes",
-                    "infantil": "Educación Infantil", "Infantil": "Educación Infantil",
+                    "infantil": "Educación Infantil", "Infantil": "Educación Infantil", "lingüístic": "Idiomas",
                     "secundaria": "Enseñanza Obligatoria", "Secundaria": "Enseñanza Obligatoria"}
-        palabras_uni = {"Catedrátic": "Catedráticos", "Profesor": "Catedráticos", "profesor": "Catedráticos",
-                        "titular": "Catedráticos", "plan de estudios": "Centros", "pruebas selectivas": "Oposiciones",
+        palabras_uni = {"Catedrátic": "Catedráticos", "Profesor": "Catedráticos", "provisión": "Catedráticos",
+                        "profesor": "Catedráticos", "titular": "Catedráticos", "plan de estudios": "Centros",
+                        "pruebas selectivas": "Oposiciones", "Oferta de Empleo": "Puestos de trabajo",
                         "concurso": "Oposiciones", "presupuesto": "Presupuesto", "subvenci": "Becas y subvenciones",
                         "Subvenci": "Becas y subvenciones", "ayudas": "Becas y subvenciones",
                         "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
-                        "Beca": "Becas y subvenciones",
+                        "Beca": "Becas y subvenciones", "oferta pública": "Oposiciones",
                         "Premio": "Becas y subvenciones"}
 
         for pal in palabras.keys():
@@ -266,6 +281,17 @@ class Reader:
         if Writer.datos_disposicion["palabra_clave_2"] == "Catedráticos":
             return datetime.today().strftime('%d/%m/%y')[:-1] + "1"
 
+
+
+    @staticmethod
+    def get_pdf_name():
+        """
+        returns the path of the pdf to be uploaded by returning the last saved file
+        """
+        list_of_files = glob.glob(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs\*")
+        latest_file = max(list_of_files, key=os.path.getctime)
+        return str(latest_file)
+
     def process_disposition(self):
         """
         processes the text of the disposition to get the neccessary info
@@ -283,7 +309,13 @@ class Reader:
         reads normal BOE HTML
         """
         # first it has to change to a container
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.CLASS_NAME,
+                                                                         "documento-tit")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("documento-tit").text
+        # now checks if the len of the body is too long or there are tables or img
+        if len(Writer.datos_disposicion["objeto_de_regulacion"]) > 60000:
+            Writer.datos_disposicion["objeto_de_regulacion"] = Writer.datos_disposicion["objeto_de_regulacion"][:60000]
+            browser.find_element_by_xpath("/html/body/div[4]/div/div[1]/div/ul/li[2]/a").click()
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("textoxslt").text
         Writer.datos_disposicion["boletin"] = "Boletín Oficial del Estado"
         self.process_disposition()
@@ -306,6 +338,8 @@ class Reader:
         """
         reads Boletín Andalucía
         """
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH,
+                                                                         "/html/body/div[4]/div/div[1]/div/div[1]/h4")))
         # first it has to change to a container
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div[4]/div/div[1]/div/div[1]/h4").text
@@ -332,6 +366,8 @@ class Reader:
         read boletín de aragón
         :param: the webdriver in use at the moment
         """
+        WebDriverWait(browser, 20).until(
+            EC.presence_of_element_located((By.XPATH, "/html/body/div/div/section/div/div/div[2]/h3/span[2]")))
         # lee objeto de regulación y texto
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div/div/section/div/div/div[2]/h3/span[2]").text
@@ -359,6 +395,9 @@ class Reader:
         read boletín de asturias
         :param: the webdriver in use at the moment
         """
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH,
+                                                                         "/html/body/div[2]/div[2]/div/div/div/div["
+                                                                         "3]/div/div[3]/div/p[1]")))
         # lee objeto de regulación y texto
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div[2]/div[2]/div/div/div/div[3]/div/div[3]/div/p[1]").text
@@ -401,6 +440,8 @@ class Reader:
         extracts data from boe canarias
         :param browser:
         """
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH,
+                                                                         "/html/body/div/div[4]/div[2]/div/h3")))
         Writer.datos_disposicion["objeto_de_regulacion"] = self.sacar_objeto_regulacion_canarias_html(browser)
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_canarias_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Canarias"
@@ -422,30 +463,40 @@ class Reader:
         return s
 
     def read_leon_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.CLASS_NAME,
+                                                                         "entradilla")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("entradilla").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_leon_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Castilla y León"
         self.process_disposition()
 
     def read_catalunya_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located(
+            (By.XPATH, "/html/body/div[2]/div/div/div/div[4]/div[4]/div[4]/div/div/div/div[3]/div[2]/div[1]/h3")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("titol").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("fitxaFragment").text
         Writer.datos_disposicion["boletin"] = "Diari Oficial de la Generalitat de Catalunya"
         self.process_disposition()
 
     def read_galicia_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.CLASS_NAME,
+                                                                         "dog-texto-sumario")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("dog-texto-sumario").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("story").text
         Writer.datos_disposicion["boletin"] = "Diario Oficial de Galicia"
         self.process_disposition()
 
     def read_larioja_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.CLASS_NAME,
+                                                                         "entradilla_anuncio")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("entradilla_anuncio").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("anuncio_texto").text
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de La Rioja"
         self.process_disposition()
 
     def read_murcia_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located(
+            (By.XPATH, "/html/body/div/div/div[3]/div[2]/div/div/h1")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("ng-binding").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("contenidoAnuncio").text
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de la Región de Murcia"
@@ -468,6 +519,9 @@ class Reader:
         return s
 
     def read_navarra_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH,
+                                                                         "/html/body/div/main/section/div/div[2]/div["
+                                                                         "1]/div/div/section/div/div/div/h3[2]")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div/main/section/div/div[2]/div[1]/div/div/section/div/div/div/h3[2]").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_navarra_html(browser)
@@ -490,13 +544,17 @@ class Reader:
         return s
 
     def read_vasco_html(self, browser):
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located(
+            (By.XPATH, "/html/body/div[1]/div[4]/div/div/div/div[2]/div/p[2]")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("BOPVTitulo").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_vasco_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial del País Vasco"
         self.process_disposition()
 
     def read_valencia(self, browser):
-        browser.switch_to.frame("iframe-164029406")
+        WebDriverWait(browser, 20).until(EC.frame_to_be_available_and_switch_to_it("iframe-164029406"))
+        WebDriverWait(browser, 20).until(EC.presence_of_element_located(
+            (By.CLASS_NAME, "negro")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("negro").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("fic2").text
         Writer.datos_disposicion["boletin"] = "Diari Oficial de la Comunitat Valenciana"
