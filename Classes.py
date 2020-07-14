@@ -62,7 +62,7 @@ class Writer:
                          "palabra_clave_2": "", "objeto_de_regulacion": "",
                          "plazo": "",
                          "fin_vigencia": "", "encabezado": "",
-                         "texto_completo": ""}
+                         "texto_completo": "", "pdf": False}
 
     @staticmethod
     def in_disposiciones(browser):
@@ -92,6 +92,15 @@ class Writer:
         browser.find_element_by_css_selector(
             "body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > a:nth-child("
             "1)").click()
+
+    @staticmethod
+    def get_pdf_name():
+        """
+        returns the path of the pdf to be uploaded by returning the last saved file
+        """
+        list_of_files = glob.glob(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs\*")
+        latest_file = max(list_of_files, key=os.path.getctime)
+        return str(latest_file)
 
     @staticmethod
     def fill_form(datos, browser):
@@ -170,12 +179,17 @@ class Writer:
             "div:nth-child(1) > textarea:nth-child(1)").send_keys(
             datos["texto_completo"])
 
+        # uploads the pdf
+        if Writer.datos_disposicion["pdf"]:
+            browser.find_element_by_name("pdf").send_keys(
+                Writer.get_pdf_name())
+
         # click en enviar boletín
         browser.find_element_by_css_selector(
             "body > form:nth-child(6) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(35) > td:nth-child(1) > "
             "div:nth-child(1) > input:nth-child(1)").click()
 
-        # vuelve a la página principal y podemos invocar a in_disposiciones() para volver a empezar
+    # vuelve a la página principal y podemos invocar a in_disposiciones() para volver a empezar
 
     @staticmethod
     def reset_datos_disposicion():
@@ -184,7 +198,10 @@ class Writer:
          errors in the next disposition
         """
         for key in Writer.datos_disposicion.keys():
-            Writer.datos_disposicion[key] = ""
+            if key == "pdf":
+                Writer.datos_disposicion[key] = False
+            else:
+                Writer.datos_disposicion[key] = ""
 
 
 class Reader:
@@ -198,7 +215,7 @@ class Reader:
     @staticmethod
     def get_rango():
         rangos = {"resolución": "Resolución", "orden": "Orden", "decreto": "Decreto", "acuerdo": "Acuerdo",
-                  "Real": "Real Decreto"}
+                  "Real": "Real Decreto", "Acuerdo": "Acuerdo"}
 
         for rang in rangos.keys():
             if rang == Writer.datos_disposicion["objeto_de_regulacion"].split(' ', 1)[0].lower():
@@ -236,11 +253,13 @@ class Reader:
                     "subvenci": "Becas y subvenciones", "Subvenci": "Becas y subvenciones",
                     "ayudas": "Becas y subvenciones", "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
                     "Beca": "Becas y subvenciones", "Premio": "Becas y subvenciones",
+                    "Convenio": "Convenios colectivos", "convenio": "Convenios colectivos",
                     "procedimiento selectivo": "Cuerpos docentes", "profesorado": "Cuerpos docentes",
                     "Formación Profesional": "Formación Profesional", "Oferta de Empleo": "Puestos de trabajo",
                     "centro": "Centros", "Centro": "Centros", "escuela": "Centros", "unidades escolares": "Centros",
                     "nueva denominación específica": "Centros", "puestos de trabajo docentes": "Cuerpos docentes",
                     "funcionarias de carrera": "Cuerpos docente", "funcionarios de carrera": "Cuerpos docentes",
+                    "admisión": "Centros", "colegio": "Centros",
                     "bachillerato": "Bachillerato", "Bachillerato": "Bachillerato", "idiomas": "Idiomas",
                     "inglés": "Idiomas", "concurso de traslados": "Concurso de traslados",
                     "traslados": "Concurso de traslados", "concierto": "Conciertos",
@@ -254,7 +273,7 @@ class Reader:
                         "Subvenci": "Becas y subvenciones", "ayudas": "Becas y subvenciones",
                         "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
                         "Beca": "Becas y subvenciones", "oferta pública": "Oposiciones",
-                        "Premio": "Becas y subvenciones"}
+                        "Premio": "Becas y subvenciones", "profesorado agregado": "Catedráticos"}
 
         for pal in palabras.keys():
             if pal in Writer.datos_disposicion["objeto_de_regulacion"]:
@@ -281,17 +300,6 @@ class Reader:
         if Writer.datos_disposicion["palabra_clave_2"] == "Catedráticos":
             return datetime.today().strftime('%d/%m/%y')[:-1] + "1"
 
-
-
-    @staticmethod
-    def get_pdf_name():
-        """
-        returns the path of the pdf to be uploaded by returning the last saved file
-        """
-        list_of_files = glob.glob(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs\*")
-        latest_file = max(list_of_files, key=os.path.getctime)
-        return str(latest_file)
-
     def process_disposition(self):
         """
         processes the text of the disposition to get the neccessary info
@@ -304,6 +312,18 @@ class Reader:
         Writer.datos_disposicion["fin_vigencia"] = self.fin_vigencia()
         self.get_palabras_clave()
 
+    @staticmethod
+    def pdf_boe(browser):
+        try:
+            browser.find_element_by_id("textoxslt").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            try:
+                browser.find_element_by_id("textoxslt").find_element_by_tag_name("img")
+                return True
+            except NoSuchElementException:
+                return False
+
     def read_boe_html(self, browser):
         """
         reads normal BOE HTML
@@ -312,11 +332,16 @@ class Reader:
         WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.CLASS_NAME,
                                                                          "documento-tit")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("documento-tit").text
-        # now checks if the len of the body is too long or there are tables or img
-        if len(Writer.datos_disposicion["objeto_de_regulacion"]) > 60000:
-            Writer.datos_disposicion["objeto_de_regulacion"] = Writer.datos_disposicion["objeto_de_regulacion"][:60000]
-            browser.find_element_by_xpath("/html/body/div[4]/div/div[1]/div/ul/li[2]/a").click()
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("textoxslt").text
+
+        # now checks if the len of the body is too long or there are tables or img and downloads pdf in case
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_boe(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH,
+                                                                         "/html/body/div[4]/div/div[1]/div/ul/li["
+                                                                         "2]/a"))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         Writer.datos_disposicion["boletin"] = "Boletín Oficial del Estado"
         self.process_disposition()
 
@@ -334,6 +359,18 @@ class Reader:
 
         return s
 
+    @staticmethod
+    def pdf_boja(browser):
+        try:
+            browser.find_element_by_id("cuerpo").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            try:
+                browser.find_element_by_id("cuerpo").find_element_by_tag_name("img")
+                return True
+            except NoSuchElementException:
+                return False
+
     def read_boja_html(self, browser):
         """
         reads Boletín Andalucía
@@ -344,6 +381,14 @@ class Reader:
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div[4]/div/div[1]/div/div[1]/h4").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_boja_html(browser)
+
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_boja(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH,
+                                                                         "/html/body/div[4]/div/div[1]/div/a["
+                                                                         "2]"))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de la Junta de Andalucía"
         self.process_disposition()
 
@@ -361,6 +406,19 @@ class Reader:
             pass
         return s
 
+    @staticmethod
+    def pdf_aragon(browser):
+        """
+        in aragon there are no images, for what i know
+        :param browser:
+        :return:
+        """
+        try:
+            browser.find_element_by_id("leelo").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            return False
+
     def read_aragon_html(self, browser):
         """
         read boletín de aragón
@@ -372,7 +430,15 @@ class Reader:
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
             "/html/body/div/div/section/div/div/div[2]/h3/span[2]").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_aragon_html(browser)
+
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_boja(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                                         r"#pdf11BRBOLE100279267\ \ \ \ \ \ "))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Aragón"
+
         self.process_disposition()
 
     @staticmethod
@@ -390,6 +456,28 @@ class Reader:
             pass
         return s
 
+    @staticmethod
+    def pdf_asturias(browser):
+        """
+        in aragon there are no images, for what i know
+        :param browser:
+        :return:
+        """
+        if "Ver anuncio en PDF para consultar la tabla" in Writer.datos_disposicion["texto_completo"]:
+            return True
+
+        try:
+            browser.find_element_by_id("bopa-articulo").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            pass
+
+        try:
+            browser.find_element_by_id("bopa-articulo").find_element_by_tag_name("img")
+            return True
+        except NoSuchElementException:
+            return False
+
     def read_asturias_html(self, browser):
         """
         read boletín de asturias
@@ -403,6 +491,14 @@ class Reader:
             "/html/body/div[2]/div[2]/div/div/div/div[3]/div/div[3]/div/p[1]").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_asturias_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial del Principado de Asturias"
+
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_asturias(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                                         ".pdfResultadoBopaLogo > a:nth-child("
+                                                                         "1)"))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         self.process_disposition()
 
     @staticmethod
@@ -415,6 +511,30 @@ class Reader:
         s = browser.find_element_by_xpath("/html/body/div/div[4]/div[2]/div/h3").text[
             5:re.search(pattern, browser.find_element_by_xpath("/html/body/div/div[4]/div[2]/div/h3").text).start()]
         return s
+
+    @staticmethod
+    def pdf_canarias(browser):
+        """
+        in aragon there are no images, for what i know
+        :param browser:
+        :return:
+        """
+        try:
+            browser.find_element_by_class_name("justificado anexo")
+            return True
+        except NoSuchElementException:
+            pass
+
+        try:
+            browser.find_element_by_class_name("conten").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            pass
+        try:
+            browser.find_element_by_class_name("conten").find_element_by_tag_name("img")
+            return True
+        except NoSuchElementException:
+            return False
 
     @staticmethod
     def sacar_texto_canarias_html(browser):
@@ -445,6 +565,13 @@ class Reader:
         Writer.datos_disposicion["objeto_de_regulacion"] = self.sacar_objeto_regulacion_canarias_html(browser)
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_canarias_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Canarias"
+
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_canarias(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                                         ".cve > a:nth-child(2)"))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         self.process_disposition()
 
     @staticmethod
@@ -462,20 +589,80 @@ class Reader:
             pass
         return s
 
+    @staticmethod
+    def pdf_leon(browser):
+        """
+        in aragon there are no images, for what i know
+        :param browser:
+        :return:
+        """
+        try:
+            browser.find_element_by_class_name("errorGenerico")
+            return True
+        except NoSuchElementException:
+            pass
+
+        try:
+            browser.find_element_by_class_name("disposicion").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            pass
+        try:
+            browser.find_element_by_class_name("disposicion").find_element_by_tag_name("img")
+            return True
+        except NoSuchElementException:
+            return False
+
     def read_leon_html(self, browser):
         WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.CLASS_NAME,
                                                                          "entradilla")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("entradilla").text
         Writer.datos_disposicion["texto_completo"] = self.sacar_texto_leon_html(browser)
         Writer.datos_disposicion["boletin"] = "Boletín Oficial de Castilla y León"
+
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_leon(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                                         ".descargaBoletin > li:nth-child(1) > "
+                                                                         "a:nth-child(1)"))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         self.process_disposition()
+
+    @staticmethod
+    def pdf_catalunya(browser):
+        """
+        same as other pdf functions
+        :param browser:
+        :return:
+        """
+
+        try:
+            browser.find_element_by_class_name("fitxaFragment").find_element_by_tag_name("table")
+            return True
+        except NoSuchElementException:
+            pass
+        try:
+            browser.find_element_by_class_name("fitxaFragment").find_element_by_tag_name("img")
+            return True
+        except NoSuchElementException:
+            return False
 
     def read_catalunya_html(self, browser):
         WebDriverWait(browser, 20).until(EC.presence_of_element_located(
-            (By.XPATH, "/html/body/div[2]/div/div/div/div[4]/div[4]/div[4]/div/div/div/div[3]/div[2]/div[1]/h3")))
+            (By.CLASS_NAME, "fitxaFragment")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("titol").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_class_name("fitxaFragment").text
         Writer.datos_disposicion["boletin"] = "Diari Oficial de la Generalitat de Catalunya"
+
+        if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_catalunya(browser):
+            Writer.datos_disposicion["pdf"] = True
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                                         ".fitxaFormatsAkomantoso > div:nth-child(2) "
+                                                                         "> ul:nth-child(1) > li:nth-child(1) > "
+                                                                         "a:nth-child(1)"))).click()
+            Writer.datos_disposicion["texto_completo"] = Writer.datos_disposicion["texto_completo"][:60000]
+
         self.process_disposition()
 
     def read_galicia_html(self, browser):

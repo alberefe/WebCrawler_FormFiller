@@ -1,8 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium.webdriver.common.by import By
 import Classes
 import os
 
@@ -33,6 +35,9 @@ format_direcciones(lista_raw)
 Here i create a new profile for Firefox to download pdfs clicking on their links
 """
 
+binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox\firefox.exe')
+newpath = r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs"
+
 mime_types = "application/pdf,application/vnd.adobe.xfdf,application/vnd.fdf,application/vnd.adobe.xdp+xml"
 fp = webdriver.FirefoxProfile()
 fp.set_preference("browser.download.folderList", 2)
@@ -42,16 +47,8 @@ fp.set_preference("browser.helperApps.neverAsk.saveToDisk", mime_types)
 fp.set_preference("plugin.disable_full_page_plugin_for_types", mime_types)
 fp.set_preference("pdfjs.disabled", True)
 
-
+# creates new webdriver with the settings
 browser = webdriver.Firefox(firefox_profile=fp)
-
-
-
-
-"""
-# entra en magislex, logea y entra en disposiciones
-browser = webdriver.Firefox()
-"""
 
 browser.get("http://magislex.com/")
 logger.log_in(browser)
@@ -70,7 +67,6 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
                                                              "input:nth-child(1)")))
 
 # now we iterate through all urls in the list and fill the form with the info inside
-
 for i in lista_mejor:
     # opens the disposición in new tab
     browser.execute_script("window.open('" + str(i) + "')")
@@ -85,8 +81,6 @@ for i in lista_mejor:
     browser.switch_to.window(browser.window_handles[0])
     Classes.Writer.fill_form(Classes.Writer.datos_disposicion, browser)
     Classes.Writer.back_to_disposiciones(browser)
-
-
 
 
 

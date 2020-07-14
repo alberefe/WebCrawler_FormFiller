@@ -3695,3 +3695,293 @@ JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_RE
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1594650426323	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileMs9hEb"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594650429752	Marionette	INFO	Listening on port 52432
+1594650429945	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1594650754968	Marionette	INFO	Stopped listening on port 52432
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594650608397	Marionette	INFO	Listening on port 52636
+1594650608539	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1594650755910	Marionette	INFO	Stopped listening on port 52636
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594650761960	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileAvEXqO"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594650765069	Marionette	INFO	Listening on port 52766
+1594650765088	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://bon.navarra.es/o/frontend-js-web/barebone.jsp?browserId=firefox&themeId=bon_WAR_bontheme&colorSchemeId=01&minifierType=js&minifierBundleId=javascript.barebone.files&languageId=es_ES&b=7010&t=1592225664043, line 180: TypeError: m.indexOf is not a function
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5421&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5422&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5516&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5482&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+1594650862116	Marionette	INFO	Stopped listening on port 52766
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594718039122	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileuOTxF6"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594718041996	Marionette	INFO	Listening on port 51321
+1594718042241	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594718190359	Marionette	INFO	Stopped listening on port 51321
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594718102632	Marionette	INFO	Listening on port 51401
+1594718102682	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594718146403	Marionette	INFO	Stopped listening on port 51401
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594718189243	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileXHiwVl"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594718193031	Marionette	INFO	Listening on port 51463
+1594718193360	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1594718882423	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilenAeWPo"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594718886121	Marionette	INFO	Listening on port 51924
+1594718886548	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1594719046498	Marionette	INFO	Stopped listening on port 51924
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.warn: services.settings: main/messaging-experiments sync interrupted by shutdown
+console.error: Region.jsm: "Failed to fetch region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594719052273	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilerjn4v0"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594719056048	Marionette	INFO	Listening on port 52016
+1594719056389	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594719130193	Marionette	INFO	Stopped listening on port 52016
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594719330862	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilecbmX7d"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594719333786	Marionette	INFO	Listening on port 52321
+1594719334441	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594719406512	Marionette	INFO	Stopped listening on port 52321
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594719588362	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileARJJcW"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594719591907	Marionette	INFO	Listening on port 52381
+1594719591986	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1594719680857	Marionette	INFO	Stopped listening on port 52381
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: ChanneJavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594719684258	Marionette	INFO	Listening on port 52437
+1594719684738	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594719695400	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1594719735079	Marionette	INFO	Stopped listening on port 52437
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594719796761	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile57VUsB"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594719800496	Marionette	INFO	Listening on port 52515
+1594719800884	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594719809822	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1594719821681	Marionette	INFO	Stopped listening on port 52515
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594720418890	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilekbSdKF"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594720422440	Marionette	INFO	Listening on port 52715
+1594720422503	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594720429899	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1594720500706	Marionette	INFO	Stopped listening on port 52715
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: ChanneJavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594720503656	Marionette	INFO	Listening on port 52784
+1594720503769	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594720511150	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1594720551976	Marionette	INFO	Stopped listening on port 52784
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594720540046	Marionette	INFO	Listening on port 52857
+1594720540261	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594720546574	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1594720578943	Marionette	INFO	Stopped listening on port 52857
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594720560365	Marionette	INFO	Listening on port 52924
+1594720560377	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594720566903	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1594720596722	Marionette	INFO	Stopped listening on port 52924
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594720714245	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile58VwMj"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://services-settings/RemoteSettingsClient.jsm, line 115: Error: Unknown callback
+JavaScript error: resource://activity-stream/lib/PlacesFeed.jsm, line 244: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsINavHistoryService.removeObserver]
+[Parent 12952, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+console.warn: services.settings: main/fxmonitor-breaches sync interrupted by shutdown
+console.warn: services.settings: main/messaging-experiments sync interrupted by shutdown
+console.error: Region.jsm: "Failed to fetch region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594720742239	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileq5N4bX"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594720745545	Marionette	INFO	Listening on port 53023
+1594720746111	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1594720757889	Marionette	INFO	Stopped listening on port 53023
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594720843220	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile2uo7vp"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594720846351	Marionette	INFO	Listening on port 53084
+1594720846835	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1594720879909	Marionette	INFO	Stopped listening on port 53084
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
