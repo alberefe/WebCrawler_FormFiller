@@ -17,10 +17,5 @@ import glob
 
 logger = Classes.Logger()
 reader = Classes.Reader()
-
-fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]*)")
-match_fecha = re.search(fecha_regex,
-                        "Orden de 25 de febrero de 2020, de la Consejería de Educación y Cultura, por la que se "
-                        "aprueba el cambio de denominación específica del Colegio de Educación Infantil y Primaria "
-                        "“Santo Domingo y San Miguel” de Mula, código 30004607 a “Florentino Bayona”.")
-print(match_fecha[3])
+reader.read_disposicion_html(i, browser)
+print(Classes.Writer.datos_disposicion)

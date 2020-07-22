@@ -761,7 +761,7 @@ class Reader:
                                                                          "cuerpo")))
         Writer.datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_id("entradilla").text
         Writer.datos_disposicion["texto_completo"] = browser.find_element_by_id("cuerpo").text
-        Writer.datos_disposicion["boletin"] = "Boletín Oficial de La Comunidad de Madrid"
+        Writer.datos_disposicion["boletin"] = "Boletín Oficial de la Comunidad de Madrid"
 
         if len(Writer.datos_disposicion["texto_completo"]) > 60000 or self.pdf_madrid(browser):
             Writer.datos_disposicion["pdf"] = True
