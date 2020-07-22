@@ -85,6 +85,5 @@ for i in lista_mejor:
 
 
 
-""" ahora tengo que hacer una función que sea upload_pdf, que reciba la url de turno, y saque de ahí el pdf 
-correspondiente.  Para download, habrá que hacerlo en cada read_disposición individual
+""" podría hacerlo para que eliminara cada url de la lista cuando la acaba de usar para así saber dónde ha fallado
 """

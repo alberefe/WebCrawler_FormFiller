@@ -275,7 +275,7 @@ class Reader:
                         "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
                         "Beca": "Becas y subvenciones", "oferta pública": "Oposiciones", "acceso": "Alumnos",
                         "Premio": "Becas y subvenciones", "profesorado agregado": "Catedráticos",
-                        "modificación": "Centros",
+                        "modificación": "Centros", "personal docente": "Oposiciones",
                         "procedimientos de matrícula": "Alumnos", "Convenio": "Centros", "convenio": "Centros"}
 
         for pal in palabras.keys():
