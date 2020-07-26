@@ -68,12 +68,12 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
 
 # now we iterate through all urls in the list and fill the form with the info inside
 for i in lista_mejor:
+    # resets previous disposition
+    Classes.Writer.reset_datos_disposicion()
     # opens the disposición in new tab
     browser.execute_script("window.open('" + str(i) + "')")
     # switch focus to new tab
     browser.switch_to.window(browser.window_handles[1])
-    # resets previous disposition
-    Classes.Writer.reset_datos_disposicion()
     # read new one
     reader.read_disposicion_html(i, browser)
     # closes tab

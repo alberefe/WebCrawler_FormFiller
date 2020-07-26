@@ -960,6 +960,8 @@ class Reader:
             self.read_vasco_html(browser)
         elif "dogv.gva" in url:
             self.read_valencia(browser)
+        elif "bocm" in url:
+            self.read_madrid_html(browser)
 
 
 """ puedo asignar a los método del otro módulo el nombre de una variable para poder usarlo sin que esté tan petado de 

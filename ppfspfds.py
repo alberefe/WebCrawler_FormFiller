@@ -15,7 +15,9 @@ import urllib
 import os
 import glob
 
+browser= webdriver.Firefox()
 logger = Classes.Logger()
 reader = Classes.Reader()
-reader.read_disposicion_html(i, browser)
+browser.get("https://boe.es/diario_boe/txt.php?id=BOE-A-2020-8472")
+reader.read_disposicion_html("https://boe.es/diario_boe/txt.php?id=BOE-A-2020-8472", browser)
 print(Classes.Writer.datos_disposicion)
