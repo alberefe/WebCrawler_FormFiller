@@ -236,10 +236,11 @@ class Reader:
     def get_fecha_mesletras(self, texto):
         fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]*)")
         match_fecha = re.search(fecha_regex, texto)
-        if match_fecha[3]:
+        try:
             return str(match_fecha[1].zfill(2)) + "/" + str(self.mes_a_numero(match_fecha[2])) \
                    + "/" + str(match_fecha[3].rstrip()[-2:])
-        else:
+        except TypeError:
+            # no está tratando la excepción adecuadamente
             return str(match_fecha[1]) + "/" + str(self.mes_a_numero(match_fecha[2])) \
                    + "/" + str(datetime.now().year)[-2:]
 
@@ -249,7 +250,7 @@ class Reader:
         saca las palabras clave a partir del objeto de regulación
         """
         palabras = {"Universidad": "Universidad", "Universitat": "Universidad", "universidad": "Universidad",
-                    "Universit": "Universidad",
+                    "Universit": "Universidad", "Técnico Superior": "Formación Profesional",
                     "subvenci": "Becas y subvenciones", "Subvenci": "Becas y subvenciones",
                     "ayudas": "Becas y subvenciones", "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
                     "Beca": "Becas y subvenciones", "Premio": "Becas y subvenciones",

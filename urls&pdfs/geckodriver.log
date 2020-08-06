@@ -4680,3 +4680,462 @@ JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreach
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1595927418519	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilelKBoFx"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595927423409	Marionette	INFO	Listening on port 51234
+1595927423622	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1595927926245	Marionette	INFO	Stopped listening on port 51234
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595927887071	Marionette	INFO	Listening on port 51745
+1595927887136	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1595927996057	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1595928004380	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1595928012196	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1595928021242	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1595928023190	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1595928032964	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1595928033584	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5909&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1595928040847	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1595928045530	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1595932846737	Marionette	INFO	Stopped listening on port 51745
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1596043262646	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileV314w1"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1596043266557	Marionette	INFO	Listening on port 51789
+1596043266858	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1596044371321	Marionette	INFO	Stopped listening on port 51789
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1596044199429	Marionette	INFO	Listening on port 52430
+1596044199472	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://bon.navarra.es/o/frontend-js-web/barebone.jsp?browserId=firefox&themeId=bon_WAR_bontheme&colorSchemeId=01&minifierType=js&minifierBundleId=javascript.barebone.files&languageId=es_ES&b=7010&t=1595287930071, line 180: TypeError: m.indexOf is not a function
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6123&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6160&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6160&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6160&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6050&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6050&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6050&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1596044369398	Marionette	INFO	Stopped listening on port 52430
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1596475207654	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile93Es3S"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1596475211896	Marionette	INFO	Listening on port 52814
+1596475212377	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=03/08/2020&refArticulo=2020-05652&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=03/08/2020&refArticulo=2020-05652&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=03/08/2020&refArticulo=2020-05651&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=03/08/2020&refArticulo=2020-05651&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=03/08/2020&refArticulo=2020-05651&i18n.http.lang=es, line 1: ReferenceError: s_gi is not defined
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/5978&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6307&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6307&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6307&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6307&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1596475723340	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1596475839770	Marionette	INFO	Stopped listening on port 52814
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1596653668148	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile2in3dR"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1596653671926	Marionette	INFO	Listening on port 54713
+1596653672281	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://bon.navarra.es/o/frontend-js-web/barebone.jsp?browserId=firefox&themeId=bon_WAR_bontheme&colorSchemeId=01&minifierType=js&minifierBundleId=javascript.barebone.files&languageId=es_ES&b=7010&t=1596527218658, line 180: TypeError: m.indexOf is not a function
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6298&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1596654090203	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6300&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6300&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6300&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6378&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+1596654457555	Marionette	INFO	Stopped listening on port 54713
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
