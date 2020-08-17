@@ -237,12 +237,16 @@ class Reader:
         fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]*)")
         match_fecha = re.search(fecha_regex, texto)
         try:
-            return str(match_fecha[1].zfill(2)) + "/" + str(self.mes_a_numero(match_fecha[2])) \
-                   + "/" + str(match_fecha[3].rstrip()[-2:])
+            fecha = str(match_fecha[1].zfill(2)) + "/" + str(self.mes_a_numero(match_fecha[2]))
+            if match_fecha[3] == 0:
+                fecha += "/" + str(match_fecha[3][-2:])
+            else:
+                fecha += "/" + str(str(datetime.now().year)[-2:])
+            return fecha
         except TypeError:
-            # no está tratando la excepción adecuadamente
-            return str(match_fecha[1]) + "/" + str(self.mes_a_numero(match_fecha[2])) \
-                   + "/" + str(datetime.now().year)[-2:]
+            # aquí habrá que ver qué pasa a veces. De momento el try lo hace bien
+            # el problema puede venir de que hay veces que no coge ningún tipo de fecha y entonces da TypeError
+            return str(datetime.today().strftime('%d/%m/%y'))
 
     @staticmethod
     def get_palabras_clave():
@@ -266,7 +270,9 @@ class Reader:
                     "interin": "Interinos", "plantilla": "Cuerpos docentes", "Cuerpo de Maestros": "Cuerpos docentes",
                     "infantil": "Educación Infantil", "Infantil": "Educación Infantil", "lingüístic": "Idiomas",
                     "secundaria": "Enseñanza Obligatoria", "Secundaria": "Enseñanza Obligatoria",
-                    "plan de estudios": "Universidad"}
+                    "Desplazamientos": "Bechas y subvenciones", "matriculación": "Centros",
+                    "bolsa de trabajo": "Puestos de trabajo", "técnico": "Formación Profesional",
+                    "plan de estudios": "Universidad", "movilidad": "Becas y subvenciones"}
 
         palabras_uni = {"Catedrátic": "Catedráticos", "Profesor": "Catedráticos", "provisión": "Catedráticos",
                         "profesor": "Catedráticos", "titular": "Catedráticos", "plan de estudios": "Centros",

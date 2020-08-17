@@ -15,9 +15,13 @@ import urllib
 import os
 import glob
 
-browser= webdriver.Firefox()
-logger = Classes.Logger()
-reader = Classes.Reader()
-browser.get("https://boe.es/diario_boe/txt.php?id=BOE-A-2020-8472")
-reader.read_disposicion_html("https://boe.es/diario_boe/txt.php?id=BOE-A-2020-8472", browser)
-print(Classes.Writer.datos_disposicion)
+c = Classes.Reader()
+
+print(c.get_fecha_mesletras(
+    "ORDEN 1829/2020, de 4 de agosto, del Consejero de Educación y Juventud, por la que se establece la autorización y "
+    "supresión de enseñanzas en institutos de educación secundaria y centros de educación de personas adultas, a partir"
+    " del curso 2020-2021."))
+print(c.get_fecha_mesletras(
+    "ORDEN 1829/2020, de 4 de agosto, del Consejero de Educación y Juventud, por la que se establece la autorización y "
+    "supresión de enseñanzas en institutos de educación secundaria y centros de educación de personas adultas, a partir"
+    " del curso 2020-2021."))

@@ -23,7 +23,7 @@ def format_direcciones(lista):
 
 
 # changes dir to the one that contains the addresses
-os.chdir(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs")
+os.chdir(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs")
 
 with open("webs") as direcciones:
     lista_raw = direcciones.readlines()  # returns a list containing each line of the documents
@@ -36,7 +36,7 @@ Here i create a new profile for Firefox to download pdfs clicking on their links
 """
 
 binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox\firefox.exe')
-newpath = r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs"
+newpath = r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs"
 
 mime_types = "application/pdf,application/vnd.adobe.xfdf,application/vnd.fdf,application/vnd.adobe.xdp+xml"
 fp = webdriver.FirefoxProfile()
