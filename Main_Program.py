@@ -1,6 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,7 +8,6 @@ import os
 
 # list that will contain the correctly formatted urls
 lista_mejor = []
-logger = Classes.Logger()
 
 
 def format_direcciones(lista):
@@ -42,18 +39,18 @@ mime_types = "application/pdf,application/vnd.adobe.xfdf,application/vnd.fdf,app
 fp = webdriver.FirefoxProfile()
 fp.set_preference("browser.download.folderList", 2)
 fp.set_preference("browser.download.manager.showWhenStarting", False)
-fp.set_preference("browser.download.dir", r"C:\Users\DickVater\PycharmProjects\AutoMagislex\urls&pdfs")
+fp.set_preference("browser.download.dir", r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs")
 fp.set_preference("browser.helperApps.neverAsk.saveToDisk", mime_types)
 fp.set_preference("plugin.disable_full_page_plugin_for_types", mime_types)
 fp.set_preference("pdfjs.disabled", True)
+
 
 # creates new webdriver with the settings
 browser = webdriver.Firefox(firefox_profile=fp)
 
 browser.get("http://magislex.com/")
-logger.log_in(browser)
-Classes.Writer.in_disposiciones(browser)
-reader = Classes.Reader()
+Classes.log_in(browser)
+Classes.in_disposiciones(browser)
 
 # aquí entra entra en los frames y espera a que esté disponible el botón para clickar
 browser.switch_to.default_content()
@@ -69,21 +66,18 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
 # now we iterate through all urls in the list and fill the form with the info inside
 for i in lista_mejor:
     # resets previous disposition
-    Classes.Writer.reset_datos_disposicion()
+    Classes.reset_datos_disposicion()
     # opens the disposición in new tab
-    browser.execute_script("window.open('" + str(i) + "')")
+    browser.execute_script("window.open('" + str(i) + "');")
     # switch focus to new tab
     browser.switch_to.window(browser.window_handles[1])
     # read new one
-    reader.read_disposicion_html(i, browser)
+    Classes.read_disposicion_html(i, browser)
     # closes tab
     browser.close()
     browser.switch_to.window(browser.window_handles[0])
-    Classes.Writer.fill_form(Classes.Writer.datos_disposicion, browser)
-    Classes.Writer.back_to_disposiciones(browser)
-
-
-
+    Classes.fill_form(Classes.datos_disposicion, browser)
+    Classes.back_to_disposiciones(browser)
 
 """ podría hacerlo para que eliminara cada url de la lista cuando la acaba de usar para así saber dónde ha fallado
 """
