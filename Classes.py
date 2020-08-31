@@ -283,7 +283,8 @@ class Reader:
                         "Beca": "Becas y subvenciones", "oferta pública": "Oposiciones", "acceso": "Alumnos",
                         "Premio": "Becas y subvenciones", "profesorado agregado": "Catedráticos",
                         "modificación": "Centros", "personal docente": "Oposiciones",
-                        "procedimientos de matrícula": "Alumnos", "Convenio": "Centros", "convenio": "Centros"}
+                        "bolsa de trabajo": "Puestos de trabajo", "procedimientos de matrícula": "Alumnos",
+                        "Convenio": "Centros", "convenio": "Centros"}
 
         for pal in palabras.keys():
             if pal in Writer.datos_disposicion["objeto_de_regulacion"]:
