@@ -4,24 +4,60 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from Classes import Writer
 import datetime
 import Classes
 import re
 import datetime
-import Classes
 import json
 import urllib
 import os
 import glob
+import string
+import Crawler
 
-c = Classes.Reader()
+palabras_buscar_disposiciones = ["universidad", "formación profesional", "educación", "educativo", "docente", "idiomas",
+                                 "enseñanza", "concierto educativo", "conciertos educativos", "educación infantil",
+                                 "educación secundaria", "bachillerato", "erasmus", "profesor", "catedrático", "alumn"]
 
-print(c.get_fecha_mesletras(
-    "ORDEN 1829/2020, de 4 de agosto, del Consejero de Educación y Juventud, por la que se establece la autorización y "
-    "supresión de enseñanzas en institutos de educación secundaria y centros de educación de personas adultas, a partir"
-    " del curso 2020-2021."))
-print(c.get_fecha_mesletras(
-    "ORDEN 1829/2020, de 4 de agosto, del Consejero de Educación y Juventud, por la que se establece la autorización y "
-    "supresión de enseñanzas en institutos de educación secundaria y centros de educación de personas adultas, a partir"
-    " del curso 2020-2021."))
+browser = webdriver.Firefox()
+
+"""
+Crawler que busca las disposiones del BOJA
+"""
+
+browser.get("https://www.juntadeandalucia.es/eboja/2020/168/s1.html")
+# browser.find_element_by_link_text("Disposiciones generales").click()
+
+WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH,
+                                                                 "/html/body/div[4]/div/div[1]/div/div[1]/div[1]/ul[2]/li/a")))
+
+items = browser.find_elements_by_class_name("item")
+
+
+for item in items:
+    try:
+        item.find_element_by_tag_name("h3")
+        if "educación" in item.find_element_by_tag_name("h3").text.lower():
+            with open(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+                      "a") as urls:
+                for dispo in item.find_elements_by_tag_name("div"):
+                    dispo_low = dispo.find_element_by_tag_name("p").text.lower()
+                    for palabra in palabras_buscar_disposiciones:
+                        if palabra in dispo_low \
+                                and "extravío" not in dispo_low \
+                                and "anuncio de formalización" not in dispo_low \
+                                and "personal de administración y servicios" not in dispo_low \
+                                and "libre designación" not in dispo_low:
+                            link = dispo.find_element_by_class_name("item_html").get_attribute("href")
+                            print(link)
+                            urls.write(link)
+                            break
+    except NoSuchElementException:
+        continue
+
+
+
+"""
+Esto funciona para andalucía, ahora hay que hacer que visite las tres sencciones que hay en el boja y repita el mismo 
+proceso
+"""

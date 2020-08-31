@@ -69,7 +69,6 @@ def in_disposiciones(browser):
     """
     entra en disposiciones desde el menú
     """
-
     if browser.current_url != "http://magislex.com/admon/abon0.htm":
         browser.get("http://magislex.com/admon/abon0.htm")
     browser.switch_to.frame("mainFrame")
@@ -213,6 +212,9 @@ def reset_datos_disposicion():
 
 
 def get_rango():
+    """
+    Saca el rango de la disposicion
+    """
     rangos = {"resolución": "Resolución", "orden": "Orden", "decreto": "Decreto", "acuerdo": "Acuerdo",
               "Real": "Real Decreto", "Acuerdo": "Acuerdo"}
 
@@ -225,6 +227,9 @@ def get_rango():
 
 
 def mes_a_numero(mes):
+    """
+    pasa el mes de la disposición al formato correcto
+    """
     meses = {"enero": "01", "febrero": "02", "marzo": "03", "abril": "04", "mayo": "05", "junio": "06",
              "julio": "07", "agosto": "08", "septiembre": "09", "octubre": "10", "noviembre": "11",
              "diciembre": "12"}
@@ -234,6 +239,9 @@ def mes_a_numero(mes):
 
 
 def get_fecha_mesletras(texto):
+    """
+    saca la fecha de la disposición del texto
+    """
     fecha_regex = re.compile(r"(\d{1,2}) de ([a-z]*)([de \d{4}]*)")
     match_fecha = re.search(fecha_regex, texto)
     try:
