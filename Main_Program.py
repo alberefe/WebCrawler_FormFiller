@@ -22,7 +22,7 @@ def format_direcciones(lista):
 # changes dir to the one that contains the addresses
 os.chdir(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs")
 
-with open("urls_disposiciones") as direcciones:
+with open("urls_disposiciones.txt") as direcciones:
     lista_raw = direcciones.readlines()  # returns a list containing each line of the documents
 
 # formats the url list and creates a logger instance

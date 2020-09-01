@@ -263,6 +263,7 @@ def get_palabras_clave():
     """
     palabras = {"Universidad": "Universidad", "Universitat": "Universidad", "universidad": "Universidad",
                 "Universit": "Universidad", "Técnico Superior": "Formación Profesional",
+                "Grado Medio": "Formación Profesional",
                 "subvenci": "Becas y subvenciones", "Subvenci": "Becas y subvenciones",
                 "ayudas": "Becas y subvenciones", "beca": "Becas y subvenciones", "Ayudas": "Becas y subvenciones",
                 "Beca": "Becas y subvenciones", "Premio": "Becas y subvenciones",
