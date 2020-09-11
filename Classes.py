@@ -330,10 +330,9 @@ def process_disposition():
     datos_disposicion["fecha_disposicion"] = get_fecha_mesletras(datos_disposicion[
                                                                      "objeto_de_regulacion"])
 
-
-datos_disposicion["fecha_publicacion"] = datetime.today().strftime('%d/%m/%y')
-datos_disposicion["fin_vigencia"] = fin_vigencia()
-get_palabras_clave()
+    datos_disposicion["fecha_publicacion"] = datetime.today().strftime('%d/%m/%y')
+    datos_disposicion["fin_vigencia"] = fin_vigencia()
+    get_palabras_clave()
 
 
 def pdf_boe(browser):
