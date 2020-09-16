@@ -79,5 +79,6 @@ for i in lista_mejor:
     Classes.fill_form(Classes.datos_disposicion, browser)
     Classes.back_to_disposiciones(browser)
 
+
 """ podría hacerlo para que eliminara cada url de la lista cuando la acaba de usar para así saber dónde ha fallado
 """

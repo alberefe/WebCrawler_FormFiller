@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import requests
 from bs4 import BeautifulSoup
+from datetime import date
 
 """
 This file contains the functions that look for the documents that interest us
@@ -19,7 +20,57 @@ y de ahi clickar en el correspondiente, que estará almacenado en un dict
 # these are the words we are looking for in the text of the dispositions
 palabras_buscar_disposiciones = ["universidad", "formación profesional", "educación", "educativo", "docente", "idiomas",
                                  "enseñanza", "concierto educativo", "conciertos educativos", "educación infantil",
-                                 "educación secundaria", "bachillerato", "erasmus", "profesor", "catedrático", "alumn"]
+                                 "educación secundaria", "bachillerato", "erasmus", "profesor", "catedrático", "alumn",
+                                 "catedrátic"]
+
+
+def select_crawler(browser, url):
+    if "boe.es" in url:
+        crawl_boe(browser)
+    elif "juntadeandalucia" in url:
+        crawl_boja(browser)
+    elif "boa.aragon" in url:
+        crawl_aragon(browser)
+    elif "sede.asturias" in url:
+        crawl_asturias(browser)
+    elif "gobiernodecanarias" in url:
+        pass
+    elif "bocyl" in url:
+        pass
+    elif "dogc.gencat" in url:
+        pass
+    elif "xunta.gal" in url:
+        pass
+    elif "web.larioja" in url:
+        pass
+    elif "borm" in url:
+        pass
+    elif "bon.navarra" in url:
+        pass
+    elif "euskadi" in url:
+        pass
+    elif "dogv.gva" in url:
+        pass
+    elif "bocm" in url:
+        pass
+
+
+def crawling_in_my_skin(browser):
+    """
+    Esta es la función principal del crawler que va a ir abriéndolo tod o y
+    ejecutando el crawler de cada una
+    """
+
+    # el boe normal se ejecuta él solo
+    crawl_boe(browser)
+
+    # se abre la lista de comunidades, y luego se sacan los links y se van clickando
+    browser.get("https://boe.es/legislacion/otros_diarios_oficiales.php#boletines_autonomicos")
+    links = get_links_comunidades(browser)
+    for link in links:
+        browser.get(link)
+        # browser.switch_to.window(browser.window_handles[1])
+        select_crawler(browser, link)
 
 
 def get_links_comunidades(browser):
@@ -27,25 +78,36 @@ def get_links_comunidades(browser):
     saca el link de cada comunidad para asegurarnos de llegar siempre a la página adecuada
     """
 
-    links_comunidades = {}
+    urls_comunidades = [
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[1]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[2]/li/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[3]/li/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[5]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[8]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[9]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[11]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[12]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[13]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[14]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[15]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[16]/li[1]/a").get_attribute("href"),
+        browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[17]/li/a").get_attribute("href")]
 
-    browser.get("https://boe.es/legislacion/otros_diarios_oficiales.php#boletines_autonomicos")
+    return urls_comunidades
 
-    links_comunidades["andalucia"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[1]/li[1]/a")
-    links_comunidades["aragon"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[2]/li/a")
-    links_comunidades["asturias"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[3]/li/a")
-    links_comunidades["canarias"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[5]/li[1]/a")
-    links_comunidades["leon"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[8]/li[1]/a")
-    links_comunidades["catalunya"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[9]/li[1]/a")
-    links_comunidades["galicia"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[11]/li[1]/a")
-    links_comunidades["rioja"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[12]/li[1]/a")
-    links_comunidades["madrid"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[13]/li[1]/a")
-    links_comunidades["murcia"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[14]/li[1]/a")
-    links_comunidades["navarra"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[15]/li[1]/a")
-    links_comunidades["vasco"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[16]/li[1]/a")
-    links_comunidades["valencia"] = browser.find_element_by_xpath("/html/body/div[4]/div/div/ul/li[2]/ul[17]/li/a")
 
-    return links_comunidades
+def check_disposicion(palabras, texto):
+    for palabra in palabras:
+        if palabra in texto \
+                and "extravío" not in texto \
+                and "anuncio de formalización" not in texto \
+                and "personal de administración y servicios" not in texto \
+                and "libre designación" not in texto \
+                and "asesor" not in texto \
+                and "técnic" not in texto\
+                and "contencionso-administrativo" not in texto:
+            return True
+    return False
 
 
 def crawl_boe(browser):
@@ -61,26 +123,17 @@ def crawl_boe(browser):
               "a") as urls:
         for dispo in disposiciones:
             dispo_low = dispo.text.lower()
-            for palabra in palabras_buscar_disposiciones:
-                if palabra in dispo_low \
-                        and "extravío" not in dispo_low \
-                        and "anuncio de formalización" not in dispo_low \
-                        and "personal de administración y servicios" not in dispo_low \
-                        and "libre designación" not in dispo_low \
-                        and "asesor" not in dispo_low \
-                        and "técnic" not in dispo_low:
-                    link = dispo.find_element_by_class_name("puntoHTML").find_element_by_link_text(
-                        "Otros formatos").get_attribute("href") + "\n"
-                    urls.write(link)
-                    break
+            if check_disposicion(palabras_buscar_disposiciones, dispo_low):
+                link = dispo.find_element_by_class_name("puntoHTML").find_element_by_link_text(
+                    "Otros formatos").get_attribute("href") + "\n"
+                urls.write(link)
 
 
-def crawl_boja(browser, boja_link):
+def crawl_boja(browser):
     """
-    :param: boja_link es el elemento del dict links_comunidades que corresponde a andalucía
+
     """
     # opens the main webpage and gets into the first section
-    boja_link.click()
     browser.find_element_by_xpath("/html/body/div[4]/div/div[2]/div[1]/ol/li[1]/a").click()
 
     # scrapes each section for each iteration
@@ -101,30 +154,23 @@ def crawl_boja(browser, boja_link):
                             , "a") as urls:
                         for dispo in item.find_elements_by_tag_name("div"):
                             dispo_low = dispo.find_element_by_tag_name("p").text.lower()
-                            for palabra in palabras_buscar_disposiciones:
-                                if palabra in dispo_low \
-                                        and "extravío" not in dispo_low \
-                                        and "anuncio de formalización" not in dispo_low \
-                                        and "personal de administración y servicios" not in dispo_low \
-                                        and "libre designación" not in dispo_low \
-                                        and "asesor" not in dispo_low \
-                                        and "técnic" not in dispo_low:
-                                    link = dispo.find_element_by_class_name("item_html").get_attribute("href") + "\n"
-                                    urls.write(link)
-                                    break
+                            if check_disposicion(palabras_buscar_disposiciones, dispo_low):
+                                link = dispo.find_element_by_class_name("item_html").get_attribute("href") + "\n"
+                                urls.write(link)
             except NoSuchElementException:
                 continue
 
         # clicks on the next section to explore
-        browser.find_element_by_xpath("/html/body/div[4]/div/div[2]/ol/li[" + str(i) + "]/a").click()
+        try:
+            browser.find_element_by_xpath("/html/body/div[4]/div/div[2]/ol/li[" + str(i) + "]/a").click()
+        except NoSuchElementException:
+            continue
 
 
-def crawl_aragon(browser, boa_link):
+def crawl_aragon(browser):
     """
-    :param: boja_link es el elemento del dict links_comunidades que corresponde a aragon
+
     """
-    # opens the mainpage and enters into the disposition list
-    boa_link.click()
 
     # locates the frame by its number, 0, because it is the first frame on the page
     WebDriverWait(browser, 20).until(EC.frame_to_be_available_and_switch_to_it(0))
@@ -150,12 +196,31 @@ def crawl_aragon(browser, boa_link):
             text = t.find_previous(text=True).strip().lower()
             part_link = t.a['href']
             link = 'http://www.boa.aragon.es' + part_link
-            for palabra in palabras_buscar_disposiciones:
-                if palabra in text \
-                        and "extravío" not in text \
-                        and "anuncio de formalización" not in text \
-                        and "personal de administración y servicios" not in text \
-                        and "libre designación" not in text \
-                        and "asesor" not in text \
-                        and "técnic" not in text:
-                    urls.write(link + "\n")
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(link + "\n")
+
+
+def crawl_asturias(browser):
+    """
+
+    """
+
+    # mete fecha de hoy y entra en la lista de disposiciones
+    browser.find_element_by_id("fecha").send_keys(str(date.today().strftime('%d/%m/%Y')))
+    browser.find_element_by_css_selector("#btn-busq-BOPA-fecha").click()
+    # espera a que la página se haya cargado
+    WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".botonBuscar > input:nth-child(1)")))
+
+    # creates a beautiful soup
+    soup = BeautifulSoup(requests.get(browser.current_url).content, 'html.parser')
+
+    # finds all the disposiciones
+    lista_disposiciones = soup.find_all("dt")
+
+    with open(
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
+            , "a") as urls:
+        for disposicion in lista_disposiciones:
+            link = disposicion.find_next("a")["href"]
+            if check_disposicion(palabras_buscar_disposiciones, disposicion.get_text()):
+                urls.write(str(link) + "\n")
