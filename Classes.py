@@ -306,7 +306,7 @@ def get_palabras_clave():
                 datos_disposicion["palabra_clave_2"] = palabras_uni[pal_uni]
                 break
         else:
-            datos_disposicion["palabra_clave_2"] = "Catedráticos"
+            datos_disposicion["palabra_clave_2"] = "Centros"
 
     if datos_disposicion["palabra_clave_1"] == "":
         datos_disposicion["palabra_clave_1"] = "Centros"

@@ -18,7 +18,7 @@ y de ahi clickar en el correspondiente, que estará almacenado en un dict
 """
 
 # these are the words we are looking for in the text of the dispositions
-palabras_buscar_disposiciones = ["universidad", "formación profesional", "educación", "educativo", "docente", "idiomas",
+palabras_buscar_disposiciones = ["universid", "formación profesional", "educación", "educativo", "docente", "idiomas",
                                  "enseñanza", "concierto educativo", "conciertos educativos", "educación infantil",
                                  "educación secundaria", "bachillerato", "erasmus", "profesor", "catedrático", "alumn",
                                  "catedrátic"]
@@ -34,8 +34,10 @@ def select_crawler(browser, url):
     elif "sede.asturias" in url:
         crawl_asturias(browser)
     elif "gobiernodecanarias" in url:
+        crawler_canarias(browser)
         pass
     elif "bocyl" in url:
+        crawler_leon(browser)
         pass
     elif "dogc.gencat" in url:
         pass
@@ -104,8 +106,8 @@ def check_disposicion(palabras, texto):
                 and "personal de administración y servicios" not in texto \
                 and "libre designación" not in texto \
                 and "asesor" not in texto \
-                and "técnic" not in texto\
-                and "contencionso-administrativo" not in texto:
+                and "técnic" not in texto \
+                and "contencionso-administrativo" not in texto.lower():
             return True
     return False
 
@@ -137,7 +139,7 @@ def crawl_boja(browser):
     browser.find_element_by_xpath("/html/body/div[4]/div/div[2]/div[1]/ol/li[1]/a").click()
 
     # scrapes each section for each iteration
-    for i in range(2, 5):
+    for i in range(2, 6):
         # waits for the page to load
         WebDriverWait(browser, 20).until(
             EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div/div[2]/ul/li[1]/a")))
@@ -162,7 +164,9 @@ def crawl_boja(browser):
 
         # clicks on the next section to explore
         try:
-            browser.find_element_by_xpath("/html/body/div[4]/div/div[2]/ol/li[" + str(i) + "]/a").click()
+            next_section = browser.find_element_by_xpath("/html/body/div[4]/div/div[2]/ol/li[" + str(i) + "]/a")
+            if "justicia" not in next_section.text:
+                next_section.click()
         except NoSuchElementException:
             continue
 
@@ -224,3 +228,65 @@ def crawl_asturias(browser):
             link = disposicion.find_next("a")["href"]
             if check_disposicion(palabras_buscar_disposiciones, disposicion.get_text()):
                 urls.write(str(link) + "\n")
+
+
+def crawler_canarias(browser):
+    """
+    pos eso
+    """
+    # entra en la página principal de las disposiciones
+    browser.find_element_by_css_selector("p.justificado_boc:nth-child(2) > a:nth-child(1)").click()
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "/html/body/div/div[4]/div[2]/div/div[1]/ul/li/a")))
+
+    # crea el bs4 object
+    url = browser.current_url
+    soup = BeautifulSoup(requests.get(url).content, "html.parser")
+
+    lista_disposiciones = soup.find_all("ul")
+
+    with open(
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
+            , "a") as urls:
+        for disposicion in lista_disposiciones:
+            # aquí selecciona sólo los links que llevan al html
+            links = disposicion.find_all("a", title="Vista previa (Versión no oficial)")
+            text = disposicion.get_text()
+
+            for link in links:
+                link_url = "http://www.gobiernodecanarias.org" + link.get("href")
+                if check_disposicion(palabras_buscar_disposiciones, text):
+                    urls.write(str(link_url) + "\n")
+
+
+def crawler_leon(browser):
+    """
+    crawler leon
+    """
+    # entra en la página principal de las disposiciones
+
+    browser.find_element_by_css_selector(".acceso > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)").click()
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "/html/body/div/div[2]/div/div/div[3]/div[2]/p/a")))
+
+    # crea el bs4 object
+    url = browser.current_url
+    soup = BeautifulSoup(requests.get(url).content, "html.parser")
+
+    # primero recogemos todas las disposiciones en contenido, luego buscamos todos los párrafos
+    contenido = soup.find("div", {"id": "resultados"})
+    lista_disposiciones = contenido.find_all("p")
+
+    with open(
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
+            , "a") as urls:
+        for disposicion in lista_disposiciones:
+            # aquí recoje tanto el link al pdf como al html
+            links_raw = disposicion.find_next_sibling()
+            links = links_raw.find_all("a")
+            text = disposicion.get_text()
+            for link in links:
+                if "html/" in link["href"]:
+                    link_url = "http://bocyl.jcyl.es/" + link["href"]
+                    if check_disposicion(palabras_buscar_disposiciones, text):
+                        urls.write(link_url + "\n")
