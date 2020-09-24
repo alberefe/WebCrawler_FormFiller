@@ -35,14 +35,12 @@ def select_crawler(browser, url):
         crawl_asturias(browser)
     elif "gobiernodecanarias" in url:
         crawler_canarias(browser)
-        pass
     elif "bocyl" in url:
         crawler_leon(browser)
-        pass
     elif "dogc.gencat" in url:
-        pass
+        crawler_catalunya(browser)
     elif "xunta.gal" in url:
-        pass
+        crawler_galicia(browser)
     elif "web.larioja" in url:
         pass
     elif "borm" in url:
@@ -192,8 +190,7 @@ def crawl_aragon(browser):
 
     # abre el txt
     with open(
-            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
-            , "a") as urls:
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
 
         # itera sobre cada texto + link y escribe el link si corresponde
         for t in soup.select('.archivos'):
@@ -222,8 +219,7 @@ def crawl_asturias(browser):
     lista_disposiciones = soup.find_all("dt")
 
     with open(
-            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
-            , "a") as urls:
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
         for disposicion in lista_disposiciones:
             link = disposicion.find_next("a")["href"]
             if check_disposicion(palabras_buscar_disposiciones, disposicion.get_text()):
@@ -246,8 +242,7 @@ def crawler_canarias(browser):
     lista_disposiciones = soup.find_all("ul")
 
     with open(
-            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
-            , "a") as urls:
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
         for disposicion in lista_disposiciones:
             # aquí selecciona sólo los links que llevan al html
             links = disposicion.find_all("a", title="Vista previa (Versión no oficial)")
@@ -278,8 +273,7 @@ def crawler_leon(browser):
     lista_disposiciones = contenido.find_all("p")
 
     with open(
-            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt"
-            , "a") as urls:
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
         for disposicion in lista_disposiciones:
             # aquí recoje tanto el link al pdf como al html
             links_raw = disposicion.find_next_sibling()
@@ -290,3 +284,106 @@ def crawler_leon(browser):
                     link_url = "http://bocyl.jcyl.es/" + link["href"]
                     if check_disposicion(palabras_buscar_disposiciones, text):
                         urls.write(link_url + "\n")
+
+
+def crawl_section_catalunya(browser):
+    """
+    función que busca en
+    """
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "/html/body/div[2]/div/div/div/div[1]/div/div/div[1]/h1/a/img")))
+
+    # crea el bs4 object
+    url = browser.current_url
+    soup = BeautifulSoup(requests.get(url).content, "html.parser")
+
+    lista_disposiciones = soup.find_all("p", {"class": "separador negreta"})
+
+    with open(
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
+        for disposicion in lista_disposiciones:
+            # aquí selecciona sólo los links que llevan al html
+            link = disposicion.find_next("a", title="Versión HTML")["href"]
+            text = disposicion.get_text()
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(str(link) + "\n")
+
+
+def crawler_catalunya(browser):
+    """
+    pues esto
+    """
+    # entra en la página principal de las disposiciones
+    try:
+        browser.find_element_by_css_selector(
+            "#sumari > ul:nth-child(2) > li:nth-child(1) > form:nth-child(2) > a:nth-child(1)").click()
+
+        crawl_section_catalunya(browser)
+
+        try:
+            browser.find_element_by_css_selector(
+                "#sumari > ul:nth-child(2) > li:nth-child(2) > form:nth-child(2) > a:nth-child(1)").click()
+
+            crawl_section_catalunya(browser)
+
+        except NoSuchElementException:
+            print("poner aquí un return porque ha acabado")
+
+    except NoSuchElementException:
+        try:
+            browser.find_element_by_css_selector(
+                "#sumari > ul:nth-child(2) > li:nth-child(2) > form:nth-child(2) > a:nth-child(1)").click()
+
+            crawl_section_catalunya(browser)
+
+        except NoSuchElementException:
+            print("no hay disposiciones hoy, aquí hay que poner un return")
+
+
+def crawler_galicia(browser):
+    dia_hoy = str(date.today().day)
+    browser.find_element_by_css_selector("[title*='Ver DOG del día " + dia_hoy).click()
+    sections = ["I. Disposiciones generales", "II. Autoridades y personal", "III. Otras disposiciones",
+                "IV. Oposiciones y concursos"]
+
+    for section_name in sections:
+        try:
+            browser.find_element_by_link_text(section_name).click()
+
+            # if there's no exception, it creates soup object and looks in it for the good stuff
+            url = browser.current_url
+            soup = BeautifulSoup(requests.get(url).content, 'html.parser')
+
+            marco_disposiciones = soup.find("div", {"id": "fichaSeccion"})
+            disposiciones = marco_disposiciones.findAll("li")
+
+            with open(
+                    r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+                    "a") as urls:
+
+                # busca disposicion a disposicion
+                for disposicion in disposiciones:
+                    text = disposicion.get_text()
+                    part_link = disposicion.find("a")["href"]
+                    link = 'https://www.xunta.gal' + part_link
+                    if check_disposicion(palabras_buscar_disposiciones, text):
+                        urls.write(link + "\n")
+        except NoSuchElementException:
+            continue
+
+
+def crawler_rioja(browser):
+    disposiciones = browser.find_elements_by_css_selector("a[title='Texto Íntegro de la Disposición']")
+
+    with open(
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+            "a") as urls:
+        # busca disposicion a disposicion
+        for disposicion in disposiciones:
+            text = disposicion.text
+            link = disposicion.get_attribute("href")
+
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(link + "\n")
+
