@@ -179,10 +179,12 @@ def crawl_aragon(browser):
 
     # opens the dispositions list and changes tabs and closes the old one and stuff
     WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/p/a"))).click()
-    browser.close()
-    browser.switch_to.window(browser.window_handles[0])
-    WebDriverWait(browser, 10).until(
-        EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/section/div/div/div/a[1]/img")))
+
+    """ esto de aquí da fallos a veces pero no recuerdo lo que hace. Habrá que revisarlo."""
+    #browser.close()
+    #browser.switch_to.window(browser.window_handles[0])
+    #WebDriverWait(browser, 10).until(
+    #    EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/section/div/div/div/a[1]/img")))
 
     # from here, Beautiful Soup is used to parse the html and get the text
     url = browser.current_url
