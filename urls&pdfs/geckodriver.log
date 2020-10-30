@@ -5139,6 +5139,7 @@ JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: R
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< Updated upstream
 1596967711155	geckodriver	INFO	Listening on 127.0.0.1:50904
 1596967714400	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilev24FAt"
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -5159,36 +5160,83 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1597092222472	Marionette	INFO	Listening on port 53376
 1597092222939	Marionette	WARN	TLS certificate errors will be ignored for this session
+=======
+1596737683431	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileUKREEn"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1596737686243	Marionette	INFO	Listening on port 50456
+1596737686633	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+>>>>>>> Stashed changes
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+<<<<<<< Updated upstream
 JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/08/2020&refArticulo=2020-05946&i18n.http.lang=es, line 415: ReferenceError: s is not defined
 JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/08/2020&refArticulo=2020-05946&i18n.http.lang=es, line 439: ReferenceError: s is not defined
 JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
 JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
 JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+=======
+>>>>>>> Stashed changes
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+<<<<<<< Updated upstream
 JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+=======
+>>>>>>> Stashed changes
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+<<<<<<< Updated upstream
 JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
 1597092407576	Marionette	INFO	Stopped listening on port 53376
+=======
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6465&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6465&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6465&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6465&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript error: http://www.dogv.gva.es/es/resultat-dogv?signatura=2020/6465&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1596737848573	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1596753644115	Marionette	INFO	Stopped listening on port 50456
+>>>>>>> Stashed changes
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< Updated upstream
 1597161898540	geckodriver	INFO	Listening on 127.0.0.1:63475
 1597161901640	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilef5kmaT"
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -5204,23 +5252,48 @@ TimedPromise/<@chrome://marionette/content/sync.js:245:13
 TimedPromise@chrome://marionette/content/sync.js:230:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
 webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+=======
+1597252863034	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileE0a128"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597252868091	Marionette	INFO	Listening on port 50710
+1597252868258	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+>>>>>>> Stashed changes
 JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
 JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+<<<<<<< Updated upstream
+=======
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+1597253023660	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileGwYEzN"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597253026918	Marionette	INFO	Listening on port 50806
+1597253027289	Marionette	WARN	TLS certificate errors will be ignored for this session
+>>>>>>> Stashed changes
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+<<<<<<< Updated upstream
 JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 1597161963923	Marionette	INFO	Stopped listening on port 63483
+=======
+1597253215054	Marionette	INFO	Stopped listening on port 50806
+>>>>>>> Stashed changes
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< Updated upstream
 1597670823021	geckodriver	INFO	Listening on 127.0.0.1:56659
 1597670826102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileor1mpe"
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -5229,6 +5302,13 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1597670828722	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+=======
+1597347765427	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileC9z8US"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597347771261	Marionette	INFO	Listening on port 50224
+1597347771490	Marionette	WARN	TLS certificate errors will be ignored for this session
+>>>>>>> Stashed changes
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
@@ -5241,14 +5321,18 @@ JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_RE
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+<<<<<<< Updated upstream
 JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
 JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+=======
+>>>>>>> Stashed changes
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+<<<<<<< Updated upstream
 JavaScript warning: http://www.bocm.es/boletin/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
 JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
@@ -5398,12 +5482,30 @@ IPDL protocol error: Handler returned error code!
 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
 
 1599810706690	Marionette	INFO	Stopped listening on port 60792
+=======
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=13/08/2020&refArticulo=2020-06534&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=13/08/2020&refArticulo=2020-06534&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1597348082240	Marionette	INFO	Stopped listening on port 50224
+>>>>>>> Stashed changes
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< Updated upstream
 1600107013710	geckodriver	INFO	Listening on 127.0.0.1:57448
 1600107016758	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilev5mBg7"
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -5439,12 +5541,20 @@ JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: R
 JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
 JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
 1600107437836	Marionette	INFO	Stopped listening on port 57825
+=======
+1597420888327	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileZPEHSP"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597420892719	Marionette	INFO	Listening on port 51025
+1597420893697	Marionette	INFO	Stopped listening on port 51025
+>>>>>>> Stashed changes
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< Updated upstream
 1600202124839	geckodriver	INFO	Listening on 127.0.0.1:50607
 1600202127899	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileJdyRrk"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
@@ -5552,12 +5662,44 @@ JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: R
 JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
 JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
 1600284684769	Marionette	INFO	Stopped listening on port 56252
+=======
+1597420901093	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilebApUs2"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597420903432	Marionette	INFO	Listening on port 51061
+1597420903988	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource:///modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+1597421062672	Marionette	INFO	Stopped listening on port 51061
+>>>>>>> Stashed changes
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< Updated upstream
 1600375110589	geckodriver	INFO	Listening on 127.0.0.1:64738
 1600375113629	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileLWcdrs"
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -6208,6 +6350,15 @@ TimedPromise@chrome://marionette/content/sync.js:230:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
 webdriverClickElement@chrome://marionette/content/interaction.js:182:31
 1600895858614	Marionette	INFO	Stopped listening on port 51509
+=======
+1597421071551	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile5NKmji"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597421076466	Marionette	INFO	Listening on port 51246
+1597421077012	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.xunta.gal/dog/contenidoEstatico/scripts/publico/rs_html5/ReadSpeaker.js?pids=embhl, line 9: TypeError: b.ReadSpeaker.pub is undefined
+1597421172270	Marionette	INFO	Stopped listening on port 51246
+>>>>>>> Stashed changes
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
