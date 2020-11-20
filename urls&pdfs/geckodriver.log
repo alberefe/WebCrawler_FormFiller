@@ -7161,3 +7161,1333 @@ webdriverClickElement@chrome://marionette/content/interaction.js:179:31
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1604444172653	geckodriver	INFO	Listening on 127.0.0.1:51060
+1604444175688	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile5ST5Pe"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604444177811	Marionette	INFO	Listening on port 51069
+1604444178328	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604444181976	Marionette	INFO	Stopped listening on port 51069
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604444200700	geckodriver	INFO	Listening on 127.0.0.1:51127
+1604444203732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilenmNs2Y"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604444205562	Marionette	INFO	Listening on port 51135
+1604444205755	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+Marionette threw an error: TypeError: this.curBrowser.messageManager is null
+GeckoDriver.prototype.sendAsync@chrome://marionette/content/driver.js:361:5
+send/<@chrome://marionette/content/proxy.js:190:12
+send@chrome://marionette/content/proxy.js:124:12
+get/<@chrome://marionette/content/proxy.js:37:29
+GeckoDriver.prototype.findElement@chrome://marionette/content/driver.js:2054:28
+
+1604444214384	Marionette	INFO	Stopped listening on port 51135
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604528932290	geckodriver	INFO	Listening on 127.0.0.1:60743
+1604528935330	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilefSneEH"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604528937100	Marionette	INFO	Listening on port 60753
+1604528937355	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604528956967	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528958827	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528961578	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528964541	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528965172	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528967742	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528969652	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528972100	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528973828	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528976570	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528979116	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528980816	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528983498	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528985130	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528987913	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528989827	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528992312	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528993989	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528996836	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604528998644	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529001292	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529001966	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529004706	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529006626	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529009123	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529010769	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529013629	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529014199	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529016776	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529019331	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529022059	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529023688	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529030807	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529044142	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529059373	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529075042	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529083803	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529095035	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529109253	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529127035	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529127632	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529131930	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=04/11/2020&refArticulo=2020-08594&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=04/11/2020&refArticulo=2020-08594&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=04/11/2020&refArticulo=2020-08594&i18n.http.lang=es, line 1: ReferenceError: s_gi is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529146405	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529155455	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529167631	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: http://www.bocm.es/boletin/js/js_EebRuRXFlkaf356V0T2K_8cnUVfCKesNTxdvvPSEhCM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1604529173196	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604529193985	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529195519	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604529396461	Marionette	INFO	Stopped listening on port 60753
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604612142711	geckodriver	INFO	Listening on 127.0.0.1:50634
+1604612145745	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileEigwBu"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604612147899	Marionette	INFO	Listening on port 50642
+1604612148367	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604612304845	Marionette	INFO	Stopped listening on port 50642
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604612319578	geckodriver	INFO	Listening on 127.0.0.1:50707
+1604612322606	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileXPode8"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604612324559	Marionette	INFO	Listening on port 50715
+1604612324636	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604612468076	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=05/11/2020&refArticulo=2020-08633&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=05/11/2020&refArticulo=2020-08633&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1604612636635	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604653364356	Marionette	INFO	Stopped listening on port 50715
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604872588451	geckodriver	INFO	Listening on 127.0.0.1:56696
+1604872592211	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileeFbFES"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604872593974	Marionette	INFO	Listening on port 56707
+1604872594235	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+1604873109330	Marionette	INFO	Stopped listening on port 56707
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1604959427690	geckodriver	INFO	Listening on 127.0.0.1:55067
+1604959430731	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileOAkLei"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604959432846	Marionette	INFO	Listening on port 55108
+1604959433359	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+1604959945643	Marionette	INFO	Stopped listening on port 55108
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1605039422604	geckodriver	INFO	Listening on 127.0.0.1:53896
+1605039425642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile9gbS7H"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1605039427562	Marionette	INFO	Listening on port 53906
+1605039427670	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-08758&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-08758&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-08757&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-08757&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-08759&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-08759&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-09355&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=10/11/2020&refArticulo=2020-09355&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605039654931	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_EebRuRXFlkaf356V0T2K_8cnUVfCKesNTxdvvPSEhCM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1605040651178	Marionette	INFO	Stopped listening on port 53906
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileJDJpfv"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605040595085	Marionette	INFO	Listening on port 54928
+1605040595375	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+1605040645617	Marionette	INFO	Stopped listening on port 54928
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605132051090	geckodriver	INFO	Listening on 127.0.0.1:52358
+1605132054130	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileUBq2wW"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605132056071	Marionette	INFO	Listening on port 52373
+1605132056155	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=11/11/2020&refArticulo=2020-09297&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=11/11/2020&refArticulo=2020-09297&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+1605132216466	Marionette	INFO	Stopped listening on port 52373
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605132228710	geckodriver	INFO	Listening on 127.0.0.1:52641
+1605132231739	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileMbjfAE"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605132233484	Marionette	INFO	Listening on port 52651
+1605132233761	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605133333542	Marionette	INFO	Stopped listening on port 52651
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605219093005	geckodriver	INFO	Listening on 127.0.0.1:55841
+1605219096044	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileAY04LR"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1605219098382	Marionette	INFO	Listening on port 55880
+1605219098681	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219208437	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219217886	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219227134	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219236834	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219245882	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219255307	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219264568	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219273931	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219283496	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219291958	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219300852	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219305789	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=12/11/2020&refArticulo=2020-08965&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=12/11/2020&refArticulo=2020-08965&i18n.http.lang=es, line 458: ReferenceError: s is not defined
+1605219315674	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=12/11/2020&refArticulo=2020-08967&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=12/11/2020&refArticulo=2020-08967&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+1605219318496	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219327058	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219335399	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605219336743	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605219341285	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605219737899	Marionette	INFO	Stopped listening on port 55880
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605468856087	geckodriver	INFO	Listening on 127.0.0.1:53205
+1605468859138	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilel5cb75"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605468860987	Marionette	INFO	Listening on port 53215
+1605468861162	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=13/11/2020&refArticulo=2020-09019&i18n.http.lang=es, line 436: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=13/11/2020&refArticulo=2020-09019&i18n.http.lang=es, line 467: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=13/11/2020&refArticulo=2020-09018&i18n.http.lang=es, line 436: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=13/11/2020&refArticulo=2020-09018&i18n.http.lang=es, line 467: ReferenceError: s is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WM2WM56&l=dataLayer, line 718: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605469620716	Marionette	INFO	Stopped listening on port 53215
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1605564982230	geckodriver	INFO	Listening on 127.0.0.1:56124
+1605564985261	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileo78q3z"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605564987056	Marionette	INFO	Listening on port 56135
+1605564987288	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+1605565001917	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565005108	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565008235	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565011133	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565014066	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565016986	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565019923	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565022833	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565026039	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605565044076	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565045282	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565047729	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605565048383	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605565061272	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605565071045	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+1605565406450	Marionette	INFO	Stopped listening on port 56135
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605565409624	geckodriver	INFO	Listening on 127.0.0.1:56438
+1605565412670	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileppnVNY"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605565414376	Marionette	INFO	Listening on port 56447
+1605565414692	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09757&i18n.http.lang=es, line 436: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09757&i18n.http.lang=es, line 729: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09062&i18n.http.lang=es, line 436: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09062&i18n.http.lang=es, line 467: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09062&i18n.http.lang=es, line 1: ReferenceError: s_gi is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09544&i18n.http.lang=es, line 436: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09544&i18n.http.lang=es, line 467: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=16/11/2020&refArticulo=2020-09544&i18n.http.lang=es, line 1: ReferenceError: s_gi is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605566343114	Marionette	INFO	Stopped listening on port 56447
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605694156781	geckodriver	INFO	Listening on 127.0.0.1:51650
+1605694159824	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileJY3mXS"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605694161449	Marionette	INFO	Listening on port 51659
+1605694161857	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694281517	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694282133	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694284503	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694285083	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694293818	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694294504	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694302454	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694303058	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694311320	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694312246	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694320797	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694321725	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694336106	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694346142	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694356245	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694366010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694375768	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694385444	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694388317	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694391232	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694400005	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694402646	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694405299	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694420354	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694421298	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694440064	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694441134	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694455891	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694457081	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694459753	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694460490	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605694463005	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605694469854	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=18/11/2020&refArticulo=2020-09212&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=18/11/2020&refArticulo=2020-09212&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+1605695767779	Marionette	INFO	Stopped listening on port 51659
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileYmsvtC"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605694874532	Marionette	INFO	Listening on port 52357
+1605694874942	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_EebRuRXFlkaf356V0T2K_8cnUVfCKesNTxdvvPSEhCM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1605695766884	Marionette	INFO	Stopped listening on port 52357
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605824172519	geckodriver	INFO	Listening on 127.0.0.1:50807
+1605824175559	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileuHPL8J"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605824177229	Marionette	INFO	Listening on port 50816
+1605824177596	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://dogc.gencat.cat/web/resources/dogc/js/calendari_helper.js, line 40: TypeError: m is null
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_EebRuRXFlkaf356V0T2K_8cnUVfCKesNTxdvvPSEhCM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605824336705	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1605825559543	Marionette	INFO	Stopped listening on port 50816
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605884537596	geckodriver	INFO	Listening on 127.0.0.1:51780
+1605884540631	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofileV6CV72"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605884542279	Marionette	INFO	Listening on port 51790
+1605884542652	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+1605884800428	Marionette	INFO	Stopped listening on port 51790
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1605884809188	geckodriver	INFO	Listening on 127.0.0.1:51995
+1605884812223	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofile6t7mHL"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605884814290	Marionette	INFO	Listening on port 52023
+1605884814354	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript warning: https://www.juntadeandalucia.es/themes/buscador/media/js/jquery-1.4.2.js, line 3686: unreachable code after return statement
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=20/11/2020&refArticulo=2020-09862&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=20/11/2020&refArticulo=2020-09862&i18n.http.lang=es, line 460: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=20/11/2020&refArticulo=2020-09760&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=20/11/2020&refArticulo=2020-09760&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=20/11/2020&refArticulo=2020-09337&i18n.http.lang=es, line 423: ReferenceError: s is not defined
+JavaScript error: https://sede.asturias.es/portal/site/Asturias/menuitem.1003733838db7342ebc4e191100000f7/?vgnextoid=d7d79d16b61ee010VgnVCM1000000100007fRCRD&fecha=20/11/2020&refArticulo=2020-09337&i18n.http.lang=es, line 454: ReferenceError: s is not defined
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+1605884874707	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript error: resource://gre/modules/pdfjs.js, line 31: NS_ERROR_FACTORY_NOT_REGISTERED: 
+JavaScript warning: http://www.bocm.es/boletin/js/js_EebRuRXFlkaf356V0T2K_8cnUVfCKesNTxdvvPSEhCM.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1605884997204	Marionette	INFO	Stopped listening on port 52021605884998304	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DICKVA~1\\AppData\\Local\\Temp\\rust_mozprofilepBn0TZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605884999984	Marionette	INFO	Listening on port 52313
+1605885000332	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/va/resultat-dogv?signatura=2020/9845&L=1, line 1: TypeError: b.contentWindow.document.body is null
+JavaScript warning: http://www.dogv.gva.es/portal/js/jquery.js, line 19: unreachable code after return statement
+1605885057404	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: http://www.dogv.gva.es/GVA-theme/js/aui-carousel.js, line 1: ReferenceError: AUI is not defined
+JavaScript error: http://www.dogv.gva.es/va/resultat-dogv?signatura=2020/9833&L=1, line 1: TypeError: b.contentWindow.document.body is null
+1605885060797	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1605885101187	Marionette	INFO	Stopped listening on port 52313
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

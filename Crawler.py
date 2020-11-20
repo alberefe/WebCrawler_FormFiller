@@ -178,13 +178,13 @@ def crawl_aragon(browser):
     WebDriverWait(browser, 20).until(EC.frame_to_be_available_and_switch_to_it(0))
 
     # opens the dispositions list and changes tabs and closes the old one and stuff
-    WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/p/a"))).click()
+    WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[2]/a/span"))).click()
 
     """ esto de aquí da fallos a veces pero no recuerdo lo que hace. Habrá que revisarlo."""
-    #browser.close()
-    #browser.switch_to.window(browser.window_handles[0])
-    #WebDriverWait(browser, 10).until(
-    #    EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/section/div/div/div/a[1]/img")))
+    browser.close()
+    browser.switch_to.window(browser.window_handles[0])
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "/html/body/div/div[2]/div[1]/a[1]/img")))
 
     # from here, Beautiful Soup is used to parse the html and get the text
     url = browser.current_url
@@ -194,10 +194,11 @@ def crawl_aragon(browser):
     with open(
             r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
 
-        # itera sobre cada texto + link y escribe el link si corresponde
-        for t in soup.select('.archivos'):
-            text = t.find_previous(text=True).strip().lower()
-            part_link = t.a['href']
+        lista_disposiciones = soup.find_all("h5", {"class": "boatitulo"})
+
+        for t in lista_disposiciones:
+            text = t.text.lower().strip()
+            part_link = t.find_next("a")["href"]
             link = 'http://www.boa.aragon.es' + part_link
             if check_disposicion(palabras_buscar_disposiciones, text):
                 urls.write(link + "\n")
