@@ -10,3 +10,5 @@ __pycache__/Crawler.cpython-38.pyc
 *.log
 
 *.txt
+
+__pycache__/

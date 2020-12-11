@@ -3,7 +3,7 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-import Classes
+import FormFiller
 import os
 
 # list that will contain the correctly formatted urls
@@ -49,8 +49,8 @@ fp.set_preference("pdfjs.disabled", True)
 browser = webdriver.Firefox(firefox_profile=fp)
 
 browser.get("http://magislex.com/")
-Classes.log_in(browser)
-Classes.in_disposiciones(browser)
+FormFiller.log_in(browser)
+FormFiller.in_disposiciones(browser)
 
 # aquí entra entra en los frames y espera a que esté disponible el botón para clickar
 browser.switch_to.default_content()
@@ -66,18 +66,18 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
 # now we iterate through all urls in the list and fill the form with the info inside
 for i in lista_mejor:
     # resets previous disposition
-    Classes.reset_datos_disposicion()
+    FormFiller.reset_datos_disposicion()
     # opens the disposición in new tab
     browser.execute_script("window.open('" + str(i) + "');")
     # switch focus to new tab
     browser.switch_to.window(browser.window_handles[1])
     # read new one
-    Classes.read_disposicion_html(i, browser)
+    FormFiller.read_disposicion_html(i, browser)
     # closes tab
     browser.close()
     browser.switch_to.window(browser.window_handles[0])
-    Classes.fill_form(Classes.datos_disposicion, browser)
-    Classes.back_to_disposiciones(browser)
+    FormFiller.fill_form(FormFiller.datos_disposicion, browser)
+    FormFiller.back_to_disposiciones(browser)
 
 
 

@@ -424,7 +424,7 @@ def sacar_texto_aragon_html(browser):
         i = 1
         t = True
         while t:
-            s += browser.find_element_by_xpath("/html/body/div/div/section/div/div/p[" + str(i) + "]" + "\n").text
+            s += browser.find_element_by_xpath("/html/body/div/div[2]/div[6]/p[" + str(i) + "]" + "\n").text
             i += 1
     except NoSuchElementException:
         pass
@@ -450,10 +450,10 @@ def read_aragon_html(browser):
     :param: the webdriver in use at the moment
     """
     WebDriverWait(browser, 20).until(
-        EC.presence_of_element_located((By.XPATH, "/html/body/div/div/section/div/div/div[2]/h3/span[2]")))
+        EC.presence_of_element_located((By.XPATH, "/html/body/div/div[2]/div[1]/p")))
     # lee objeto de regulación y texto
     datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
-        "/html/body/div/div/section/div/div/div[2]/h3/span[2]").text
+        "/html/body/div/div[2]/div[1]/p").text
     datos_disposicion["texto_completo"] = sacar_texto_aragon_html(browser)
 
     if len(datos_disposicion["texto_completo"]) > 60000 or pdf_boja(browser):
