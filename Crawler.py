@@ -31,13 +31,10 @@ def select_crawler(browser, url):
         crawl_boja(browser)
     elif "boa.aragon" in url:
         crawl_aragon(browser)
-        pass
     elif "sede.asturias" in url:
         crawl_asturias(browser)
-        pass
     elif "gobiernodecanarias" in url:
         crawler_canarias(browser)
-        pass
     elif "bocyl" in url:
         crawler_leon(browser)
     elif "dogc.gencat" in url:
@@ -47,12 +44,11 @@ def select_crawler(browser, url):
     elif "web.larioja" in url:
         crawler_rioja(browser)
     elif "borm" in url:
-        pass
+        crawler_murcia(browser)
     elif "bocm" in url:
-        # crawler_madrid(browser)
-        pass
+        crawler_madrid(browser)
     elif "bon.navarra" in url:
-        crawl_navarra(browser)
+        crawler_navarra(browser)
     elif "euskadi" in url:
         pass
     elif "dogv.gva" in url:
@@ -399,16 +395,13 @@ def crawler_madrid(browser):
     browser.find_element_by_css_selector(
         ".field-name-field-content-name > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
 
-    useful_sections = [section for section in
+    useful_sections = [section.get_attribute("href") for section in
                        browser.find_element_by_class_name("view-grouping-content").find_elements_by_tag_name("a") if
                        "UNIVERSIDAD" in section.text or "EDUCACIÓN" in section.text or "SANIDAD" in section.text]
 
     for section in useful_sections:
 
-        # saca la url
-        section_url = section.get_attribute("href")
-
-        browser.get(section_url)
+        browser.get(section)
 
         soup = BeautifulSoup(requests.get(browser.current_url).content, 'html.parser')
 
@@ -428,7 +421,7 @@ def crawler_madrid(browser):
                     urls.write(link + "\n")
 
 
-def crawl_murcia(browser):
+def crawler_murcia(browser):
     WebDriverWait(browser, 10).until(
         EC.element_to_be_clickable(
             (By.XPATH, "/html/body/div/div/div[3]/div/div/div[3]/div/div/div/div/div/p[2]/a"))).click()
@@ -457,7 +450,7 @@ def crawl_murcia(browser):
                     urls.write(link + "\n")
 
 
-def crawl_navarra(browser):
+def crawler_navarra(browser):
     """
 
     """
