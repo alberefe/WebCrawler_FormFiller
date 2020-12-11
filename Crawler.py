@@ -31,10 +31,13 @@ def select_crawler(browser, url):
         crawl_boja(browser)
     elif "boa.aragon" in url:
         crawl_aragon(browser)
+        pass
     elif "sede.asturias" in url:
         crawl_asturias(browser)
+        pass
     elif "gobiernodecanarias" in url:
         crawler_canarias(browser)
+        pass
     elif "bocyl" in url:
         crawler_leon(browser)
     elif "dogc.gencat" in url:
@@ -42,16 +45,17 @@ def select_crawler(browser, url):
     elif "xunta.gal" in url:
         crawler_galicia(browser)
     elif "web.larioja" in url:
-        pass
+        crawler_rioja(browser)
     elif "borm" in url:
         pass
-    elif "bon.navarra" in url:
+    elif "bocm" in url:
+        # crawler_madrid(browser)
         pass
+    elif "bon.navarra" in url:
+        crawl_navarra(browser)
     elif "euskadi" in url:
         pass
     elif "dogv.gva" in url:
-        pass
-    elif "bocm" in url:
         pass
 
 
@@ -390,3 +394,92 @@ def crawler_rioja(browser):
             if check_disposicion(palabras_buscar_disposiciones, text):
                 urls.write(link + "\n")
 
+
+def crawler_madrid(browser):
+    browser.find_element_by_css_selector(
+        ".field-name-field-content-name > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
+
+    useful_sections = [section for section in
+                       browser.find_element_by_class_name("view-grouping-content").find_elements_by_tag_name("a") if
+                       "UNIVERSIDAD" in section.text or "EDUCACIÓN" in section.text or "SANIDAD" in section.text]
+
+    for section in useful_sections:
+
+        # saca la url
+        section_url = section.get_attribute("href")
+
+        browser.get(section_url)
+
+        soup = BeautifulSoup(requests.get(browser.current_url).content, 'html.parser')
+
+        # finds all the disposiciones
+        lista_disposiciones = soup.find_all("div", {
+            "class": "field field-name-field-html-file field-type-file field-label-hidden"})
+
+        with open(
+                r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+                "a") as urls:
+
+            for disposicion in lista_disposiciones:
+                link = "http://www.bocm.es" + disposicion.find_next("a")["href"]
+                text = disposicion.find_previous("div", {"class": "field-item even"}).text
+
+                if check_disposicion(palabras_buscar_disposiciones, text):
+                    urls.write(link + "\n")
+
+
+def crawl_murcia(browser):
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "/html/body/div/div/div[3]/div/div/div[3]/div/div/div/div/div/p[2]/a"))).click()
+
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "/html/body/div/div/div[3]/div[4]/div/div[1]/div/div[2]/a[1]")))
+
+    html = browser.page_source
+
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # finds all the disposiciones
+    lista_disposiciones = soup.find_all("a", title="Ver anuncio")
+
+    for dispo in lista_disposiciones:
+
+        with open(
+                r"C:\\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+                "a") as urls:
+            for disposicion in lista_disposiciones:
+                link = "http://www.bocm.es" + disposicion["href"]
+                text = disposicion.find_previous_sibling().find_previous_sibling().find_previous_sibling().text
+
+                if check_disposicion(palabras_buscar_disposiciones, text):
+                    urls.write(link + "\n")
+
+
+def crawl_navarra(browser):
+    """
+
+    """
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "/html/body/div/main/section/div/div[2]/div[1]/div/div[2]/section/div/div/div/p[1]/a")))
+
+    soup = BeautifulSoup(requests.get(browser.current_url).content, 'html.parser')
+
+    # finds all the disposiciones from an anchor link
+    anchor_link = soup.find("p", {"class": "pdf-link hidden-print"})
+
+    print(anchor_link.text)
+    lista_disposiciones = anchor_link.find_next_siblings("p")
+
+    for i in lista_disposiciones:
+        print(i.text)
+
+    with open(r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+              "a") as urls:
+        for disposicion in lista_disposiciones:
+            link = disposicion.find_next("a")["href"]
+            text = disposicion.text
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(link + "\n")
