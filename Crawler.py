@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 from bs4 import BeautifulSoup
 from datetime import date
+import re
 
 """
 This file contains the functions that look for the documents that interest us
@@ -50,9 +51,9 @@ def select_crawler(browser, url):
     elif "bon.navarra" in url:
         crawler_navarra(browser)
     elif "euskadi" in url:
-        pass
+        crawler_euskadi(browser)
     elif "dogv.gva" in url:
-        pass
+        crawler_valencia(browser)
 
 
 def crawling_in_my_skin(browser):
@@ -474,5 +475,55 @@ def crawler_navarra(browser):
         for disposicion in lista_disposiciones:
             link = disposicion.find_next("a")["href"]
             text = disposicion.text
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(link + "\n")
+
+
+def crawler_euskadi(browser):
+    url = browser.current_url
+    print(url)
+    soup = BeautifulSoup(requests.get(url).content, 'html.parser')
+
+    pattern = re.compile(".+?(?=Ultimo)")
+    part_link_1 = pattern.match(url).group(0)
+    print(part_link_1)
+
+    with open(
+            r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
+        lista_disposiciones = soup.find_all("p", {"class": "BOPVSumarioTitulo"})
+
+        for dispo in lista_disposiciones:
+            text = dispo.text.lower().strip()
+            part_link_2 = dispo.find("a")["href"]
+            link = part_link_1 + part_link_2
+            print(link)
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(link + "\n")
+
+
+def crawler_valencia(browser):
+    WebDriverWait(browser, 20).until(
+        EC.frame_to_be_available_and_switch_to_it(browser.find_element_by_xpath("//*[@id='iframe-164029029']")))
+
+    WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "/html/body/div/div[2]/div[2]/ul/li[2]/a")))
+
+    html = browser.page_source
+    soup = BeautifulSoup(html, "html.parser")
+
+    part_link_1 = "http://www.dogv.gva.es/va"
+    disposiciones = soup.find_all("li", {"class": "enlaceHTML"})
+
+    with open(
+            r"C:\\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+            "a") as urls:
+        for dispo in disposiciones:
+            part_link_2 = dispo.find_next("a")["href"]
+
+            text = dispo.find_previous("div", {"class": "Organismo"}).find_next(string=True).find_next(
+                string=True).strip().lower()
+            link = part_link_1 + part_link_2
+
             if check_disposicion(palabras_buscar_disposiciones, text):
                 urls.write(link + "\n")
