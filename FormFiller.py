@@ -185,8 +185,7 @@ def fill_form(datos, browser):
 
     # click en enviar boletín
     browser.find_element_by_css_selector(
-        "body > form:nth-child(6) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(35) > td:nth-child(1) > "
-        "div:nth-child(1) > input:nth-child(1)").click()
+        "body > form:nth-child(6) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(35) > td:nth-child(1) > div:nth-child(1) > input:nth-child(1)").click()
 
 
 # vuelve a la página principal y podemos invocar a in_disposiciones() para volver a empezar
@@ -400,7 +399,7 @@ def read_boja_html(browser):
     reads Boletín Andalucía
     """
     WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH,
-                                                                     "/html/body/div[4]/div/div[1]/div/div[1]/h4")))
+                                                                     "/html/body/div[4]/div/div[2]/ul/li/ul/li/a")))
     # first it has to change to a container
     datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
         "/html/body/div[4]/div/div[1]/div/div[1]/h4").text

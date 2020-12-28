@@ -398,7 +398,7 @@ def crawler_madrid(browser):
 
     useful_sections = [section.get_attribute("href") for section in
                        browser.find_element_by_class_name("view-grouping-content").find_elements_by_tag_name("a") if
-                       "UNIVERSIDAD" in section.text or "EDUCACIÓN" in section.text or "SANIDAD" in section.text]
+                       "UNIVERSIDAD" in section.text or "EDUCACIÓN" in section.text]
 
     for section in useful_sections:
 
@@ -429,7 +429,7 @@ def crawler_murcia(browser):
 
     WebDriverWait(browser, 10).until(
         EC.element_to_be_clickable(
-            (By.XPATH, "/html/body/div/div/div[3]/div[4]/div/div[1]/div/div[2]/a[1]")))
+            (By.XPATH, "/html/body/div/div/div[3]/div[5]/div/div[1]/div/div[2]/p[1]")))
 
     html = browser.page_source
 
@@ -481,12 +481,10 @@ def crawler_navarra(browser):
 
 def crawler_euskadi(browser):
     url = browser.current_url
-    print(url)
     soup = BeautifulSoup(requests.get(url).content, 'html.parser')
 
     pattern = re.compile(".+?(?=Ultimo)")
     part_link_1 = pattern.match(url).group(0)
-    print(part_link_1)
 
     with open(
             r"C:\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt", "a") as urls:
@@ -496,7 +494,6 @@ def crawler_euskadi(browser):
             text = dispo.text.lower().strip()
             part_link_2 = dispo.find("a")["href"]
             link = part_link_1 + part_link_2
-            print(link)
             if check_disposicion(palabras_buscar_disposiciones, text):
                 urls.write(link + "\n")
 
