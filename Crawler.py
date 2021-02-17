@@ -1,3 +1,5 @@
+import datetime
+
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
@@ -8,6 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import date
 import re
+import time
 
 """
 This file contains the functions that look for the documents that interest us
@@ -209,14 +212,18 @@ def crawl_asturias(browser):
     """
 
     """
+    fecha_hoy = str(datetime.date.today().day) + "/" + str(datetime.date.today().month) + "/" + str(
+        datetime.date.today().year)
 
-    # mete fecha de hoy y entra en la lista de disposiciones
-    browser.find_element_by_id("fecha").send_keys(str(date.today().strftime('%d/%m/%Y')))
-    browser.find_element_by_css_selector("#btn-busq-BOPA-fecha").click()
-    # espera a que la página se haya cargado
-    WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".botonBuscar > input:nth-child(1)")))
+    WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH,
+                                                                 '//*[@id="p_r_p_summaryDate"]'))).send_keys(fecha_hoy)
 
-    # creates a beautiful soup
+    browser.find_element_by_xpath(
+        "/html/body/div[1]/div/section/div[4]/div/div/div/div[1]/section/div/div/div/div/div/div/div/div/div/div/div/div[1]/form/div[2]/button/span").click()
+
+    WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH,
+                                                                 "/html/body/div[1]/div/section/div[4]/div/div/div/div/section/div/div[2]/div/div/div/div/div/fieldset/div/div/div/div/div[6]/div/div/div/a[2]")))
+
     soup = BeautifulSoup(requests.get(browser.current_url).content, 'html.parser')
 
     # finds all the disposiciones
@@ -416,7 +423,8 @@ def crawler_madrid(browser):
 
             for disposicion in lista_disposiciones:
                 link = "http://www.bocm.es" + disposicion.find_next("a")["href"]
-                text = disposicion.find_previous("div", {"class": "field-item even"}).text
+                text = disposicion.find_previous("div", {
+                    "class": "field field-name-field-short-description field-type-text-long field-label-hidden"}).text
 
                 if check_disposicion(palabras_buscar_disposiciones, text):
                     urls.write(link + "\n")
@@ -427,10 +435,8 @@ def crawler_murcia(browser):
         EC.element_to_be_clickable(
             (By.XPATH, "/html/body/div/div/div[3]/div/div/div[3]/div/div/div/div/div/p[2]/a"))).click()
 
-    WebDriverWait(browser, 10).until(
-        EC.element_to_be_clickable(
-            (By.XPATH, "/html/body/div/div/div[3]/div[5]/div/div[1]/div/div[2]/p[1]")))
 
+    time.sleep(10)
     html = browser.page_source
 
     soup = BeautifulSoup(html, 'html.parser')
@@ -438,17 +444,15 @@ def crawler_murcia(browser):
     # finds all the disposiciones
     lista_disposiciones = soup.find_all("a", title="Ver anuncio")
 
-    for dispo in lista_disposiciones:
+    with open(
+            r"C:\\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
+            "a") as urls:
+        for disposicion in lista_disposiciones:
+            link = "http://www.bocm.es" + disposicion["href"]
+            text = disposicion.find_previous_sibling().find_previous_sibling().find_previous_sibling().text
 
-        with open(
-                r"C:\\Users\DickVater\PycharmProjects\AutoMagislex\magislex\urls&pdfs\urls_disposiciones.txt",
-                "a") as urls:
-            for disposicion in lista_disposiciones:
-                link = "http://www.bocm.es" + disposicion["href"]
-                text = disposicion.find_previous_sibling().find_previous_sibling().find_previous_sibling().text
-
-                if check_disposicion(palabras_buscar_disposiciones, text):
-                    urls.write(link + "\n")
+            if check_disposicion(palabras_buscar_disposiciones, text):
+                urls.write(link + "\n")
 
 
 def crawler_navarra(browser):
@@ -509,7 +513,7 @@ def crawler_valencia(browser):
     html = browser.page_source
     soup = BeautifulSoup(html, "html.parser")
 
-    part_link_1 = "http://www.dogv.gva.es/va"
+    part_link_1 = "http://www.dogv.gva.es/es"
     disposiciones = soup.find_all("li", {"class": "enlaceHTML"})
 
     with open(

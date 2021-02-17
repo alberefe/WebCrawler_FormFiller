@@ -29,7 +29,7 @@ with open("urls_disposiciones.txt") as direcciones:
 format_direcciones(lista_raw)
 
 """
-Here i create a new profile for Firefox to download pdfs clicking on their links
+Here I create a new profile for Firefox to download pdfs clicking on their links
 """
 
 binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox\firefox.exe')
@@ -43,7 +43,6 @@ fp.set_preference("browser.download.dir", r"C:\Users\DickVater\PycharmProjects\A
 fp.set_preference("browser.helperApps.neverAsk.saveToDisk", mime_types)
 fp.set_preference("plugin.disable_full_page_plugin_for_types", mime_types)
 fp.set_preference("pdfjs.disabled", True)
-
 
 # creates new webdriver with the settings
 browser = webdriver.Firefox(firefox_profile=fp)
@@ -64,6 +63,10 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
                                                              "input:nth-child(1)")))
 
 # now we iterate through all urls in the list and fill the form with the info inside
+
+
+"""hay que usar módulo de manejo del teclado ctrl+t   ctrl+w para abrir y cerrar pestañas, da problemas sino
+"""
 for i in lista_mejor:
     # resets previous disposition
     FormFiller.reset_datos_disposicion()
@@ -78,8 +81,6 @@ for i in lista_mejor:
     browser.switch_to.window(browser.window_handles[0])
     FormFiller.fill_form(FormFiller.datos_disposicion, browser)
     FormFiller.back_to_disposiciones(browser)
-
-
 
 """ podría hacerlo para que eliminara cada url de la lista cuando la acaba de usar para así saber dónde ha fallado
 """

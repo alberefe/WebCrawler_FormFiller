@@ -1,3 +1,7 @@
+import urllib
+
+import requests
+from bs4 import BeautifulSoup
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
@@ -7,6 +11,9 @@ import re
 from datetime import datetime
 import os
 import glob
+import time
+import urllib3
+
 
 """
 Parte que logea en la web
@@ -270,7 +277,7 @@ def get_palabras_clave():
                 "Formación Profesional": "Formación Profesional", "Oferta de Empleo": "Puestos de trabajo",
                 "centro": "Centros", "Centro": "Centros", "escuela": "Centros", "unidades escolares": "Centros",
                 "nueva denominación específica": "Centros", "puestos de trabajo docentes": "Cuerpos docentes",
-                "funcionarias de carrera": "Cuerpos docente", "funcionarios de carrera": "Cuerpos docentes",
+                "funcionarias de carrera": "Cuerpos docentes", "funcionarios de carrera": "Cuerpos docentes",
                 "admisión": "Centros", "colegio": "Centros", "Erasmus": "Becas y subvenciones",
                 "bachillerato": "Bachillerato", "Bachillerato": "Bachillerato", "idiomas": "Idiomas",
                 "inglés": "Idiomas", "concurso de traslados": "Concurso de traslados",
@@ -449,11 +456,15 @@ def read_aragon_html(browser):
     :param: the webdriver in use at the moment
     """
     WebDriverWait(browser, 20).until(
-        EC.presence_of_element_located((By.XPATH, "/html/body/div/div[2]/div[1]/p")))
+        EC.presence_of_element_located((By.XPATH, "/html/body/div/div[2]/div[5]/div[1]/span[1]/a[1]/img")))
     # lee objeto de regulación y texto
     datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_xpath(
         "/html/body/div/div[2]/div[1]/p").text
     datos_disposicion["texto_completo"] = sacar_texto_aragon_html(browser)
+
+    # testes
+    print(datos_disposicion["objeto_de_regulacion"])
+    print(datos_disposicion["texto_completo"])
 
     if len(datos_disposicion["texto_completo"]) > 60000 or pdf_boja(browser):
         datos_disposicion["pdf"] = True
@@ -947,11 +958,23 @@ def pdf_valencia(browser):
 
 
 def read_valencia(browser):
-    WebDriverWait(browser, 20).until(EC.frame_to_be_available_and_switch_to_it("iframe-164029406"))
-    WebDriverWait(browser, 20).until(EC.presence_of_element_located(
-        (By.CLASS_NAME, "negro")))
-    datos_disposicion["objeto_de_regulacion"] = browser.find_element_by_class_name("negro").text
-    datos_disposicion["texto_completo"] = browser.find_element_by_id("fic2").text
+    time.sleep(10)
+
+    html = browser.page_source
+    soup = BeautifulSoup(html, "html.parser")
+
+    iframes = soup.find_all("iframe")
+
+    i_frame = iframes[0]
+
+    headers = {"User-Agent": "jose"}
+
+    i_frame_content = requests.get(f"http://www.dogv.gva.es" + i_frame["src"], headers=headers)
+
+    soup2 = BeautifulSoup(i_frame_content.content, "html.parser")
+
+    datos_disposicion["objeto_de_regulacion"] = soup2.find("h3", {"class": "negro"}).text
+    datos_disposicion["texto_completo"] = soup2.find("p", {"id": "fic2"}).text
     datos_disposicion["boletin"] = "Diari Oficial de la Comunitat Valenciana"
 
     if len(datos_disposicion["texto_completo"]) > 60000 or pdf_valencia(browser):
