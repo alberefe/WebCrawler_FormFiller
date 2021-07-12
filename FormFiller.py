@@ -462,9 +462,7 @@ def read_aragon_html(browser):
         "/html/body/div/div[2]/div[1]/p").text
     datos_disposicion["texto_completo"] = sacar_texto_aragon_html(browser)
 
-    # testes
-    print(datos_disposicion["objeto_de_regulacion"])
-    print(datos_disposicion["texto_completo"])
+
 
     if len(datos_disposicion["texto_completo"]) > 60000 or pdf_boja(browser):
         datos_disposicion["pdf"] = True
@@ -979,8 +977,7 @@ def read_valencia(browser):
 
     if len(datos_disposicion["texto_completo"]) > 60000 or pdf_valencia(browser):
         datos_disposicion["pdf"] = True
-        WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR,
-                                                                     ".btnPDF"))).click()
+        time.sleep(5)
         datos_disposicion["texto_completo"] = datos_disposicion["texto_completo"][:60000]
 
     process_disposition()

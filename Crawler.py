@@ -72,9 +72,13 @@ def crawling_in_my_skin(browser):
     browser.get("https://boe.es/legislacion/otros_diarios_oficiales.php#boletines_autonomicos")
     links = get_links_comunidades(browser)
     for link in links:
-        browser.get(link)
-        # browser.switch_to.window(browser.window_handles[1])
-        select_crawler(browser, link)
+        try:
+            browser.get(link)
+            # browser.switch_to.window(browser.window_handles[1])
+            select_crawler(browser, link)
+        except:
+            continue
+
 
 
 def get_links_comunidades(browser):
@@ -219,7 +223,7 @@ def crawl_asturias(browser):
                                                                  '//*[@id="p_r_p_summaryDate"]'))).send_keys(fecha_hoy)
 
     browser.find_element_by_xpath(
-        "/html/body/div[1]/div/section/div[4]/div/div/div/div[1]/section/div/div/div/div/div/div/div/div/div/div/div/div[1]/form/div[2]/button/span").click()
+        '//*[@id="_pa_sede_bopa_web_portlet_SedeBopaSearchDateWeb_submit"]').click()
 
     WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH,
                                                                  "/html/body/div[1]/div/section/div[4]/div/div/div/div/section/div/div[2]/div/div/div/div/div/fieldset/div/div/div/div/div[6]/div/div/div/a[2]")))
@@ -426,7 +430,7 @@ def crawler_madrid(browser):
                 text = disposicion.find_previous("div", {
                     "class": "field field-name-field-short-description field-type-text-long field-label-hidden"}).text
 
-                if check_disposicion(palabras_buscar_disposiciones, text):
+                if check_disposicion(palabras_buscar_disposiciones, text) and 'popup' in link:
                     urls.write(link + "\n")
 
 
