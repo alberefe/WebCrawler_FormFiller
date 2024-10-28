@@ -1,6 +1,10 @@
 This project is my first project outside of University. It was made after my fist year as soon as I learned how to 
 program so it was filled with bugs and bad practices. I decided to keep it as a reminder of how far I've come.
 
+It is a webcrawler using selenium and bs4 that scrapped some government websites in search for information
+about education. It was motivated by my then job as data entry operator, and it freed me from having to
+parse those websites myself.
+
 I have made some changes to the code so I could check all of this bad practices and learn from them. 
 
 I list them here so I can remember them for educational purposes.
