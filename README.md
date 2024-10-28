@@ -3,7 +3,8 @@ program so it was filled with bugs and bad practices. I decided to keep it as a 
 
 It is a webcrawler using selenium and bs4 that scrapped some government websites in search for information
 about education. It was motivated by my then job as data entry operator, and it freed me from having to
-parse those websites myself.
+parse those websites myself. It also took care of the data entry part of the job, in which used the scrapped 
+data to fill a form for each of the communities.
 
 I have made some changes to the code so I could check all of this bad practices and learn from them. 
 
